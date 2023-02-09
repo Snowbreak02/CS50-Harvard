@@ -13,12 +13,12 @@ for student in students:
 # {} means its going to be a 'dictionary' bcos u can link values tgt inside
 
 students = [
-    {"name": "Jeremy", "house": "Landed", "race": "chink"}
-    {"name": "James", "house": "HDB", "race": "chink"}
-    {"name": "Hatim", "house": "condo", "race": "indian"}
+    {"name": "Jeremy", "house": "Landed", "race": "chink"},
+    {"name": "James", "house": "HDB", "race": "chink"},
+    {"name": "Hatim", "house": "condo", "race": "indian"},
     {"name": "Faeez", "house": "hdb", "race": None}
 
 ]
 
 for student in students:
-    print(student["name"], students["house"], student["race"], sep="| ")
+    print(student["name"], student["house"], student["race"], sep="| ")
