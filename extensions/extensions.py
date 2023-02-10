@@ -1,18 +1,18 @@
 x = str(input("File name: "))
 x = x.strip()
-if "gif" in x:
+if x.endswith(".gif"):
     print("image/gif")
-elif "jpg" in x:
+elif x.endswith(".jpg"):
     print("image/jpeg")
-elif "jpeg" in x:
+elif x.endswith(".jpeg"):
     print("image/jpeg")
-elif "png" in x:
+elif x.endswith(".png"):
     print("image/png")
-elif "pdf" in x:
+elif x.endswith(".pdf"):
     print("application/pdf")
-elif "txt" in x:
+elif x.endswith(".txt"):
     print("text/plain")
-elif "zip" in x:
+elif x.endswith(".zip"):
     print("application/zip")
 else:
     print("application/octet-stream")
