@@ -1,2 +1,3 @@
 x = str(input("File name: "))
-x = x.strip()
+x = x.strip().title()
+print(x)
