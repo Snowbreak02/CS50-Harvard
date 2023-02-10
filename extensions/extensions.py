@@ -1,5 +1,5 @@
 x = str(input("File name: "))
-x = x.lower()
+x = x.lower().strip()
 if x.endswith(".gif"):
     print("image/gif")
 elif x.endswith(".jpg"):
