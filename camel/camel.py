@@ -1,7 +1,7 @@
 camel = input ("camelCase: ")
 print("snake_case: ", end="")
 
-for letter in name:
+for letter in camel:
         if letter.isupper():
             print("_" + letter.lower(), end = "")
         else:
