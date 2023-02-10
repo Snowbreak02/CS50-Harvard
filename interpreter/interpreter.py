@@ -13,5 +13,6 @@ if y == "-":
     answer = x1 - z1
 if y == "*":
     answer = x1 * z1
-print (answer)
+
+print (round(answer,1))
 
