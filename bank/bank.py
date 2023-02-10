@@ -6,3 +6,4 @@ elif "H" in x:
     print("$20")
 else:
     print("$0")
+check50 cs50/problems/2022/python/bank
