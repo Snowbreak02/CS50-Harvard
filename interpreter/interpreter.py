@@ -4,7 +4,7 @@ def main():
     answer = convert(exp)
 
 def convert(answer):
-    x, y, z = exp.split(" ")
+    x, y, z = answer.split(" ")
     if y == "+":
         answer = x + z
     if y == "/":
