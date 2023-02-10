@@ -2,13 +2,16 @@ answer = input("Expression: ")
 
 x, y, z = answer.split(" ")
 
+x1 = float(x)
+z1 = float(z)
+
 if y == "+":
-    answer = x + z
+    answer = x1 + z1
 if y == "/":
-    answer = x / z
+    answer = x1 / z1
 if y == "-":
-    answer = x - z
+    answer = x1 - z1
 if y == "*":
-    answer = x * z
-return answer
+    answer = x1 * z1
+print (answer)
 
