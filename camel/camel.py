@@ -1,6 +1,6 @@
 def main():
     name = input ("camelCase: ")
-    name.find
+    name.find(uppercase)
 
 
 
