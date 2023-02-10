@@ -13,6 +13,6 @@ def convert(answer):
         answer = x - z
     if y == "*":
         answer = x * z
-    return answer
 
-main()
+
+    main()
