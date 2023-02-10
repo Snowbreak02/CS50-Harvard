@@ -1,5 +1,5 @@
 x = str(input("File name: "))
-
+x = x.strip()
 if "gif" in x:
     print("image/gif")
 elif "jpg" in x:
@@ -9,10 +9,10 @@ elif "jpeg" in x:
 elif "png" in x:
     print("image/png")
 elif "pdf" in x:
-    print("image/pdf")
+    print("application/pdf")
 elif "txt" in x:
-    print("image/txt")
+    print("text/plain")
 elif "zip" in x:
-    print("image/zip")
+    print("application/zip")
 else:
     print("application/octet-stream")
