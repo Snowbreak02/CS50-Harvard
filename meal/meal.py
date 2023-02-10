@@ -16,6 +16,7 @@ def convert(time):
     return float(hours)+minz
 
 if __name__ == "__main__":
-main()
+
+    main()
 
 
