@@ -1,5 +1,5 @@
+camel = input ("camelCase: ")
 
-name = input ("camelCase: ")
 
 
 
