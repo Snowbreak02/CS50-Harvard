@@ -1,4 +1,8 @@
 x = str(input("Greeting: "))
 x = x.strip().title()
-if (x contains greets):
-print("$100")
+if "Hello" in x:
+    print("$100")
+elif "H" in x:
+    print("$20")
+else:
+    print("$0")
