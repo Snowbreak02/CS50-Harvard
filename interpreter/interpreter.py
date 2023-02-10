@@ -1,14 +1,18 @@
-def main()
+def main():
 
-    exp = print("Expression: ")
+    exp = input("Expression: ")
     answer = convert(exp)
 
-
-
-
-def convert(answer)
+def convert(answer):
     x, y, z = exp.split(" ")
-    if y = "+":
-        
+    if y == "+":
+        answer = x + z
+    if y == "/":
+        answer = x / z
+    if y == "-":
+        answer = x - z
+    if y == "*":
+        answer = x * z
+    return answer
 
     main()
