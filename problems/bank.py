@@ -1,5 +1,7 @@
 def main()
 
-if x = greeting:
-    print("$0")
-elif 
+x = str(input("Greeting: "))
+
+
+
+main()
