@@ -1,6 +1,6 @@
 def main():
 
-    exp = input("Expression: ")
+    exp = str(print("Expression: "))
     answer = convert(exp)
 
 def convert(answer):
@@ -15,4 +15,4 @@ def convert(answer):
         answer = x * z
     return answer
 
-    main()
+main()
