@@ -1,5 +1,5 @@
 camel = input ("camelCase: ")
-
+print(")
 
 
 
