@@ -1,11 +1,12 @@
 def main()
 
-    answer = print("Expression: ")
-    z = round(x / y, 2)
-print(z)
+    exp = print("Expression: ")
+    answer = convert(exp)
 
 
 
 
+def convert(answer)
+    x, y, z = exp.split(" ")
 
     main()
