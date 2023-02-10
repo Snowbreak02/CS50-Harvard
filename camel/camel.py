@@ -1,5 +1,5 @@
 camel = input ("camelCase: ")
-print(")
+print("snake_case)
 
 
 
