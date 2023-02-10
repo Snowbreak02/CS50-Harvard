@@ -1,7 +1,7 @@
 def main()
 
+greets = "Hello" or greets = "hello"
 x = str(input("Greeting: "))
-from keyword import iskeyword
-x .isidentifier(), iskeyword('hello')
-
+if x contains greets
+print(f'"{str1}" contains "{str2}" = {str2 in str1}')
 main()
