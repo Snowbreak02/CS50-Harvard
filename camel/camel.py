@@ -1,7 +1,6 @@
-def main():
-    name = input ("camelCase: ")
-    name.find(uppercase)
+
+name = input ("camelCase: ")
 
 
 
-main()
+
