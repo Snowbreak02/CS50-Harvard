@@ -1,3 +1,3 @@
 x = str(input("File name: "))
-x = x.strip().title()
+x = x.islower()
 print(x)
