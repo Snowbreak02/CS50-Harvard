@@ -5,7 +5,5 @@ def main():
 
 
 
-def (amtdue):
-    retunr 7
 
-    main()
+main()
