@@ -1,9 +1,3 @@
-def main():
+amt_due = 50
 
-    print("Amount due: ",amtdue)
-    inserted = input("insert coin: ")
-
-
-
-
-main()
+while amt_due
