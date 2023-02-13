@@ -1,2 +1,2 @@
-amtdue = input("Amount due: 50")
-print()
+print("Amount due: 50")
+amtdue = input("insert coin: ")
