@@ -14,7 +14,10 @@ def is_valid(s):
 
     if s[0].isalpha() == False or s[1].isalpha() == False:
         return False
-    if middle_char(s).isnumeric
+
+    if middle_char(s).isnumeric() == True:
+        return False
+
     i = 0
     while i < len(s):
         if s[i].isalpha() == False:
