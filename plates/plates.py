@@ -16,6 +16,14 @@ def is_valid(s):
     i = 0
     while i < lens(s):
         if s[i].is.alpha() == False:
+            if s[i] == "0":
+                return False
+            else:
+                break
+        i+=1
+
+    for char in s:
+        if char 
 
 
 main()
