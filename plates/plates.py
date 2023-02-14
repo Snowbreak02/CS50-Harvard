@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    ...
+    plate
 
 
 main()
