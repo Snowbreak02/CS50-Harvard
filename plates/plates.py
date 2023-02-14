@@ -14,8 +14,8 @@ def is_valid(s):
         return False
 
     i = 0
-    while i < lens(s):
-        if s[i].is.alpha() == False:
+    while i < len(s):
+        if s[i].isalpha() == False:
             if s[i] == "0":
                 return False
             else:
