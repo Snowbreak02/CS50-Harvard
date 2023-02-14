@@ -5,6 +5,8 @@ def main():
     else:
         print("Invalid")
 
+def middle_char(txt):
+    return txt[(len(txt)-1)//2:(len(txt)+2)//2]
 
 def is_valid(s):
     if len(s) < 2 or len(s) > 6:
@@ -12,7 +14,7 @@ def is_valid(s):
 
     if s[0].isalpha() == False or s[1].isalpha() == False:
         return False
-
+    if middle_char(s).isnumeric
     i = 0
     while i < len(s):
         if s[i].isalpha() == False:
