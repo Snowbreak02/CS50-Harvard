@@ -1,3 +1,3 @@
 x = str(input("Greeting: "))
 x = x.strip().title()
-print(x.replace("H", "J"))
+to_remov = {"t": "T", "l": "L", "r": "R", "s": "S"}
