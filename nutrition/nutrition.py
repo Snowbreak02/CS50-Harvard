@@ -1,5 +1,5 @@
-food = input("Item: ")
-food = food.lowercase()
+food = input(str("Item: "))
+food = food.lower()
 
 match food:
     case "apple":
@@ -20,4 +20,5 @@ match food:
         print("Calories: 80")
     case "pear"|"sweet cherries":
         print("Calories: 100")
-    
+    case _:
+        "/n"
