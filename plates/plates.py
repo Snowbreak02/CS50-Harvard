@@ -12,7 +12,10 @@ def is_valid(s):
 
     if s[0].isalpha() == False or s[1].isalpha() == False:
         return False
-    
+
+    i = 0
+    while i < lens(s):
+        if s[i].is.alpha() == False:
 
 
 main()
