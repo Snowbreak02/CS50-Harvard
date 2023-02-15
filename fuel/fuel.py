@@ -1,6 +1,6 @@
 def main():
     x = get_frac("Fraction: ")
-    print(f"x is {x}")
+    print(f"x is {}")
 
 def get_frac(prompt):
     while True:
