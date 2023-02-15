@@ -22,7 +22,7 @@ while True:
 
     except:
         try:
-            ol_month, ol_date, year = date.split(" ")
+            ol_month, ol_date, year = in_date.split(" ")
             for i in range(len(months)):
                 if ol_month == months[i]:
                     month = i + 1
