@@ -1,5 +1,6 @@
 while True:
     item = input("Item: ")
+    item = item.lower().title()
     try:
         menu = {"Baja Taco": "4.00",
         "Burrito": "7.50",
@@ -12,7 +13,7 @@ while True:
         "Tortilla Salad": "8.00"}
         if item in menu:
             price = menu.get(item)
-            print(f"Total: $",price)
+            print(f"Total: $",price,sep="")
             break
     except EOFError:
         pass
