@@ -1,5 +1,5 @@
 def main():
-    x = get_int("Fraction ")
+    x = get_int("Fraction: ")
     print(f"x is {x}")
 
 def get_int(prompt):
@@ -8,8 +8,11 @@ def get_int(prompt):
             x = int(input(prompt))
         except ValueError:
             pass
+        except ZeroDivisionError:
+            pass
         else:
-            return x    #return will break out of the loop
+            break
+
 
 
 main()
