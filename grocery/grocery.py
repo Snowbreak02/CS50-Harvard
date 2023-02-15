@@ -2,11 +2,13 @@ grocery_list = {}
 
 while True:
     try:
-        item = input()
+        item = input().lower()
         if item in grocery:
-            
-
+            grocery[item] += 1
+        else:
+            grocery[item] = 1
 
     except EOFError:
-        print()
+        for key in grocery:
+            print(key)
         break
