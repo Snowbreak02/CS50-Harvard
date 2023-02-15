@@ -6,9 +6,7 @@ def get_int(prompt):
     while True:
         try:
             x = int(input(prompt))
-        except ValueError:
-            pass
-        except ZeroDivisionError:
+        except (ValueError, ZeroDivisionError):
             pass
         else:
             break
