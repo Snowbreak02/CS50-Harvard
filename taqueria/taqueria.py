@@ -1,4 +1,5 @@
 while True:
+    item = input()
     try:
-        item = input()
+        
     except EOFError:
