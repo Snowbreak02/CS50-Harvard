@@ -19,3 +19,4 @@ while True:
             break
     except EOFError:
         print()
+        break
