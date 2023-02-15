@@ -12,7 +12,7 @@ while True:
         "Tortilla Salad": "8.00"}
         if item in menu:
             price = menu.get(item)
-            print(price)
+            print(f"Total: $",price)
             break
     except EOFError:
         pass
