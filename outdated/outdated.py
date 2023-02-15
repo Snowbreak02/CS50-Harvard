@@ -2,7 +2,7 @@ while True:
     in_date = input("Date: ")
     try:
         month, date, year = in_date.split("/")
-        if month != int
+        if (month <= 12, month >= 1, date<= 31, date >= 1)
 
     except (ValueError):
         pass
