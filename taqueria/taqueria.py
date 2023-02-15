@@ -1,8 +1,4 @@
-while True:
-    item = input("Item: ")
-    item = item.lower().title().strip()
-    try:
-        menu = {"Baja Taco": "4.00",
+menu = {"Baja Taco": "4.00",
         "Burrito": "7.50",
         "Bowl": "8.50",
         "Nachos": "11.00",
@@ -11,6 +7,13 @@ while True:
         "Super Quesadilla": "9.50",
         "Taco": "3.00",
         "Tortilla Salad": "8.00"}
+
+total_amt = 0
+
+while True:
+    item = input("Item: ")
+    item = item.lower().title().strip()
+    try:
         if item in menu:
             price = menu.get(item)
             print(f"Total: $",price,sep="")
