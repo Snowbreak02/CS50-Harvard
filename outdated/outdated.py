@@ -1,3 +1,18 @@
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
+
 while True:
     in_date = input("Date: ")
     try:
@@ -7,7 +22,7 @@ while True:
 
     except:
         try:
-            
+            ol_month, ol_date, year = date.split(" ")
 
     perc = f * 100
 
