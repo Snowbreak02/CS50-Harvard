@@ -1,8 +1,8 @@
 def main():
-    x = get_int("Fraction: ")
+    x = get_frac("Fraction: ")
     print(f"x is {x}")
 
-def get_int(prompt):
+def get_frac(prompt):
     while True:
         try:
             x = int(input(prompt))
