@@ -2,10 +2,12 @@ while True:
     in_date = input("Date: ")
     try:
         month, date, year = in_date.split("/")
-        if (month <= 12, month >= 1, date<= 31, date >= 1)
+        if (int(month) <= 12 and int(month) >= 1 and int(date) <= 31 and int(date) >= 1):
+            break
 
-    except (ValueError):
-        pass
+    except:
+        try:
+            
 
     perc = f * 100
 
