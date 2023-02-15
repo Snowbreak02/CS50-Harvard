@@ -33,6 +33,6 @@ while True:
             print()
             pass
 
-print(f"{year}-{int(month):02}-{int(date):02}")
+print(f"{year.strip()}-{int(month):02}-{int(date):02}")
 
 
