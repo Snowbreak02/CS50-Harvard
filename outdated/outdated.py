@@ -22,14 +22,16 @@ while True:
 
     except:
         try:
-            
-            ol_month, ol_date, year = in_date.split(" ")
-            for i in range(len(months)):
-                if ol_month == months[i]:
-                    month = i + 1
-            date = ol_date.replace(",","")
-            if (int(month) <= 12 and int(month) >= 1) and (int(date) <= 31 and int(date) >= 1):
-                break
+            if "," in in_date:
+                ol_month, ol_date, year = in_date.split(" ")
+                for i in range(len(months)):
+                    if ol_month == months[i]:
+                        month = i + 1
+                date = ol_date.replace(",","")
+                if (int(month) <= 12 and int(month) >= 1) and (int(date) <= 31 and int(date) >= 1):
+                    break
+            else:
+                pass
         except:
             print()
             pass
