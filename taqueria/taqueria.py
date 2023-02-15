@@ -1,6 +1,6 @@
 while True:
     item = input("Item: ")
-    item = item.lower().title()
+    item = item.lower().title().strip()
     try:
         menu = {"Baja Taco": "4.00",
         "Burrito": "7.50",
