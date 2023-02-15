@@ -1,5 +1,5 @@
 def main():
-    x = get_frac("Fraction: ")
+    f = get_frac("Fraction: ")
     perc = f * 100
 
     if perc <= 1:
@@ -18,7 +18,7 @@ def get_frac(prompt):
             new_deno = int(denominator)
             f = new_num/new_deno
             if f <= 1:
-                break
+                return f
 
         except (ValueError, ZeroDivisionError):
             pass
