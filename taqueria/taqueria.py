@@ -1,22 +1,21 @@
-menu = {"Baja Taco": "4.00",
-        "Burrito": "7.50",
-        "Bowl": "8.50",
-        "Nachos": "11.00",
-        "Quesadilla": "8.50",
-        "Super Burrito": "8.50",
-        "Super Quesadilla": "9.50",
-        "Taco": "3.00",
-        "Tortilla Salad": "8.00"}
+menu = {"Baja Taco": 4.00,
+        "Burrito": 7.50,
+        "Bowl": 8.50,
+        "Nachos": 11.00,
+        "Quesadilla": 8.50,
+        "Super Burrito": 8.50,
+        "Super Quesadilla": 9.50,
+        "Taco": 3.00,
+        "Tortilla Salad": 8.00}
 
 total_amt = 0
 
 while True:
-    item = input("Item: ")
-    item = item.lower().title().strip()
     try:
+        item = input("Item: ").lower().title().strip()
         if item in menu:
-            price = menu.get(item)
+            total_amt += menu[item]
             print(f"Total: $",price,sep="")
             break
     except EOFError:
-        pass
+        print()
