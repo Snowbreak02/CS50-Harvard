@@ -26,7 +26,7 @@ while True:
             for i in range(len(months)):
                 if ol_month == months[i]:
                     month = i + 1
-            day = ol_date.replace(",","")
+            date = ol_date.replace(",","")
             if (int(month) <= 12 and int(month) >= 1 and int(date) <= 31 and int(date) >= 1):
                 break
         except:
