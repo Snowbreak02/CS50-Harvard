@@ -2,8 +2,8 @@ while True:
     fuel = input("Fraction: ")
     try:
         numerator, denominator = fuel.split("/")
-        new_num = float(numerator)
-        new_deno = float(denominator)
+        new_num = int(numerator)
+        new_deno = int(denominator)
         f = new_num/new_deno
         if f <= 1:
             break
