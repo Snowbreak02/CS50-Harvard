@@ -10,10 +10,12 @@ def get_frac(prompt):
             new_num = int(numer)
             new_deno = int(deno)
             f = new_num/new_deno
+            if f <= 1:
+                break
+
         except (ValueError, ZeroDivisionError):
             pass
-        else:
-            break
+
 
 
 
