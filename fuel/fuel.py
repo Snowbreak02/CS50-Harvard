@@ -1,6 +1,13 @@
 def main():
     x = get_frac("Fraction: ")
-    print(f"x is {x}")
+    perc = f * 100
+
+    if perc <= 1:
+        print("E")
+    elif perc >= 99:
+        print("F")
+    else:
+        print(f"{perc}")
 
 def get_frac(prompt):
     while True:
@@ -16,13 +23,6 @@ def get_frac(prompt):
         except (ValueError, ZeroDivisionError):
             pass
 
-    perc = f * 100
 
-    if perc <= 1:
-        print("E")
-    elif perc >= 99:
-        print("F")
-    else:
-        return perc
 
 main()
