@@ -3,12 +3,12 @@ grocery_list = {}
 while True:
     try:
         item = input().lower()
-        if item in grocery:
-            grocery[item] += 1
+        if item in grocery_list:
+            grocery_list[item] += 1
         else:
-            grocery[item] = 1
+            grocery_list[item] = 1
 
     except EOFError:
-        for key in sorted(grocery.keys()):
-            print(grocery[key], key.upper())
+        for key in sorted(grocery_list.keys()):
+            print(grocery_list[key], key.upper())
         break
