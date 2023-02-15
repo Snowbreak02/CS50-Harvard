@@ -10,6 +10,6 @@ try:
     "Taco": 3.00,
     "Tortilla Salad": 8.00})
     if item in menu:
-        print("Total: $)
+        print(f"Total: ${item}")
 except EOFError:
-
+    pass
