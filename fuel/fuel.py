@@ -1,3 +1,4 @@
+import math
 while True:
     fuel = input("Fraction: ")
     try:
