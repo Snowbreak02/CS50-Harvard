@@ -15,8 +15,8 @@ while True:
         item = input("Item: ").lower().title().strip()
         if item in menu:
             total_amt += menu[item]
-            print(f"Total: $",price,sep="")
-            break
+            print(f"Total: $",total_amt,sep="")
+            
     except EOFError:
         print()
         break
