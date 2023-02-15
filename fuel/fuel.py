@@ -18,5 +18,5 @@ if perc <= 1:
 elif perc >= 99:
     print("F")
 else:
-    print(f"{int(perc)}%")
+    print(f"{math.ceil(perc)}%")
 
