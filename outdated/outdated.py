@@ -23,12 +23,16 @@ while True:
     except:
         try:
             ol_month, ol_date, year = date.split(" ")
+            for i in range(len(months)):
+                if ol_month == months[i]:
+                    month = i + 1
+            day = ol_day.replace(",","")
+            if (int(month) <= 12 and int(month) >= 1 and int(date) <= 31 and int(date) >= 1):
+                break
+        except:
+            print()
+            pass
 
-    perc = f * 100
+print(f"{year}-{int(month):02}-{int(year):02}")
 
-    if perc <= 1:
-        print("E")
-    elif perc >= 99:
-        print("F")
-    else:
-        print(f"{round(perc)}%")
+
