@@ -1,16 +1,18 @@
-item = input("Item: ")
-try:
-    menu = {"Baja Taco": "4.00",
-    "Burrito": "7.50",
-    "Bowl": "8.50",
-    "Nachos": "11.00",
-    "Quesadilla": "8.50",
-    "Super Burrito": "8.50",
-    "Super Quesadilla": "9.50",
-    "Taco": "3.00",
-    "Tortilla Salad": "8.00"}
-    if item in menu:
-        price = menu.get(item)
-        print(price)
-except EOFError:
-    pass
+while True:
+    item = input("Item: ")
+    try:
+        menu = {"Baja Taco": "4.00",
+        "Burrito": "7.50",
+        "Bowl": "8.50",
+        "Nachos": "11.00",
+        "Quesadilla": "8.50",
+        "Super Burrito": "8.50",
+        "Super Quesadilla": "9.50",
+        "Taco": "3.00",
+        "Tortilla Salad": "8.00"}
+        if item in menu:
+            price = menu.get(item)
+            print(price)
+            break
+    except EOFError:
+        pass
