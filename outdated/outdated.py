@@ -7,11 +7,11 @@ while True:
     except (ValueError):
         pass
 
-perc = f * 100
+    perc = f * 100
 
-if perc <= 1:
-    print("E")
-elif perc >= 99:
-    print("F")
-else:
-    print(f"{round(perc)}%")
+    if perc <= 1:
+        print("E")
+    elif perc >= 99:
+        print("F")
+    else:
+        print(f"{round(perc)}%")
