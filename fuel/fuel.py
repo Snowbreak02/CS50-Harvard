@@ -1,5 +1,3 @@
-import math
-
 while True:
     fuel = input("Fraction: ")
     try:
@@ -20,5 +18,5 @@ if perc <= 1:
 elif perc >= 99:
     print("F")
 else:
-    print(f"{math.ceil(perc)}%")
+    print(f"{round(perc)}%")
 
