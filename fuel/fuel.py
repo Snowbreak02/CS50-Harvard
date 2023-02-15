@@ -18,5 +18,5 @@ if perc <= 1:
 elif perc >= 99:
     print("F")
 else:
-    print(f"{perc}%")
+    print(f"{int(perc)}%")
 
