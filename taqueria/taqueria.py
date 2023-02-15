@@ -1,4 +1,4 @@
-item = input()
+item = input("Item: ")
 try:
     menu = dict({"Baja Taco": 4.00,
     "Burrito": 7.50,
