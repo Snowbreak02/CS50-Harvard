@@ -15,8 +15,8 @@ while True:
         item = input("Item: ").lower().title().strip()
         if item in menu:
             total_amt += menu[item]
-            formated = "{:.2f}".format(total_amt)
-            print(f"Total: $",formated,sep="")
+            prin("Total: $", end ="")
+            print("{:.2f}".format(total_amt))
 
     except EOFError:
         print()
