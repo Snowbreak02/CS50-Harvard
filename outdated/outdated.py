@@ -14,7 +14,7 @@ months = [
 ]
 
 while True:
-    in_date = input("Date: ")
+    in_date = input("\r\nDate: ")
     try:
         month, date, year = in_date.split("/")
         if (int(month) <= 12 and int(month) >= 1 and int(date) <= 31 and int(date) >= 1):
