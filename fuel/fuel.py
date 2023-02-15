@@ -1,28 +1,22 @@
-def main():
-    f = get_frac("Fraction: ")
-    perc = f * 100
+while True:
+    fuel = input("Fraction: ")
+    try:
+        numerator, denominator = fuel.split("/")
+        new_num = int(numerator)
+        new_deno = int(denominator)
+        f = new_num/new_deno
+        if f <= 1:
+            break
 
-    if perc <= 1:
-        print("E")
-    elif perc >= 99:
-        print("F")
-    else:
-        print(f"{perc}")
+    except (ValueError, ZeroDivisionError):
+        pass
 
-def get_frac(prompt):
-    while True:
-        try:
-            fuel = input(prompt)
-            numerator, denominator = fuel.split("/")
-            new_num = int(numerator)
-            new_deno = int(denominator)
-            f = new_num/new_deno
-            if f <= 1:
-                return f
+perc = f * 100
 
-        except (ValueError, ZeroDivisionError):
-            pass
+if perc <= 1:
+    print("E")
+elif perc >= 99:
+    print("F")
+else:
+    print(f"{perc}"%)
 
-
-
-main()
