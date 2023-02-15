@@ -17,7 +17,6 @@ while True:
             total_amt += menu[item]
             print("Total: $", end ="")
             print("{:.2f}".format(total_amt))
-        break
     except EOFError:
         print()
         break
