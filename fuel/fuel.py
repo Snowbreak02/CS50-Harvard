@@ -5,7 +5,11 @@ def main():
 def get_frac(prompt):
     while True:
         try:
-            x = int(input(prompt))
+            fuel = input(prompt)
+            numerator, denominator = fuel.split("/")
+            new_num = int(numer)
+            new_deno = int(deno)
+            f = new_num/new_deno
         except (ValueError, ZeroDivisionError):
             pass
         else:
