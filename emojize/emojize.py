@@ -1,5 +1,5 @@
 import emoji
 
+inputed = input("Input: ")
 
-
-print(emoji.emojize('Python is :thumbs_up:'))
+print(emoji.emojize('Output: ', inputed))
