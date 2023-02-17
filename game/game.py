@@ -2,7 +2,7 @@ import random
 
 while True:
     try:
-        lvl = input(int("Level: "))
+        lvl = int(input("Level: "))
         if lvl > 0:
             break
         else:
