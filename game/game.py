@@ -1,9 +1,9 @@
 import random
 
-lvl = int(input("Level: "))
 while True:
+    lvl = int(input("Level: "))
     try:
-        lvl = int(input("Level: "))
+        print("value is ", lvl)
 
-    except ValueError:
+    except (ValueError or lvl < 0):
         pass
