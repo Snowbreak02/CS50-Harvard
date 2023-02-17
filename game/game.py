@@ -1,8 +1,10 @@
 import random
 
 while True:
-    lvl = int(input("Level: "))
-    if (lvl == ValueError or lvl < 0):
+    try:
+        lvl = int(input("Level: "))
+        if lvl > 0:
+            print("value is ", )
+
+    except:
         pass
-    else:
-        print("value is", lvl)
