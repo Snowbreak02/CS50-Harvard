@@ -4,7 +4,7 @@ import random
 def main():
     level = get_level()
     score_T = score_total(level)
-    print("Score: ",score_T)
+    print("Score:",score_T)
 
 def get_level():
     while True:
