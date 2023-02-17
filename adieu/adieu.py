@@ -1,3 +1,15 @@
 import inflect
 
-in_name = input("Name: ")
+
+while True:
+    try:
+    in_name = input("Name: ")
+
+
+
+
+
+
+
+
+
