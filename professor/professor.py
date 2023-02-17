@@ -3,7 +3,8 @@ import random
 
 def main():
     level = get_level()
-
+    score_T = score_total(level)
+    print("Score: ",score_T)
 
 def get_level():
     while True:
@@ -43,7 +44,16 @@ def rounds(rng_x,rng_y)L
     print (f"{rng_x} + {rng_y} = {rng_x+rng_y}")
     return False
 
-
+def score_total(level):
+    round = 1
+    score = 0
+    while round < 11:
+        rng_x,rng_y = generate_integer(level)
+        output = rounds(rng_x,rng_y)
+        if output ==True :
+            score+=1
+        round +=1
+    return score
 
 if __name__ == "__main__":
     main()
