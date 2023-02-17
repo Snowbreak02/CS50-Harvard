@@ -1,6 +1,6 @@
 import inflect
 
-names = {}
+names = []
 
 while True:
     try:
