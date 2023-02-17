@@ -7,5 +7,5 @@ while True:
             break
         else:
             pass
-    except EOFError:
+    except ValueError:
         pass
