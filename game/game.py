@@ -5,6 +5,14 @@ while True:
         lvl = int(input("Level: "))
         if lvl > 0:
             rng = random.randint(1,lvl)
-            print(rng)
+            while True:
+                guess = int(input("Guess: "))
+                if guess > rng:
+                    print("Too large!")
+                elif guess < rng:
+                    print("Too Small!")
+            except guess == rng:
+                print("Just right!")
+                break
     except:
         pass
