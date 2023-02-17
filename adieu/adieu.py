@@ -13,7 +13,9 @@ while True:
         print()
         break
 
-print("Adieu, adiue, to " + p.join(names))
+for name in names:
+    mylist = p.join((names), final_sep=",")
+print(f"Adieu, adieu, to {mylist}")
 
 
 
