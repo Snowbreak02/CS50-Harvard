@@ -27,6 +27,22 @@ def generate_integer(level):
 
     return rng_x,rng_y
 
+def rounds(rng_x,rng_y)L
+    tries = 1
+    while tries < 4:
+        try:
+            ans = int(input(f"{rng_x} + {rng_y} = "))
+            if ans == (rng_x+rng_y):
+                return True
+            else:
+                tries +=1
+                print("EEE")
+        except:
+            tries +=1
+            print("EEE")
+    print (f"{rng_x} + {rng_y} = {rng_x+rng_y}")
+    return False
+
 
 
 if __name__ == "__main__":
