@@ -4,7 +4,7 @@ while True:
     try:
         lvl = int(input("Level: "))
         if lvl > 0:
-            #print("value is ", )
-            break
+            rng = random.randint(1,lvl)
+            print(rng)
     except:
         pass
