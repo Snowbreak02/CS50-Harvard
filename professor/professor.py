@@ -9,9 +9,9 @@ def main():
 def get_level():
     while True:
         try:
-            lvl = int(input("Level: "))
-            if lvl in [1,2,3]:
-                return lvl
+            level = int(input("Level: "))
+            if level in [1,2,3]:
+                return level
         except:
             pass
 
