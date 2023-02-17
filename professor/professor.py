@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    ...
+    level = get_level()
 
 
 def get_level():
@@ -10,9 +10,10 @@ def get_level():
         try:
             lvl = int(input("Level: "))
             if lvl = [1,2,3]:
-            break
-    except:
-        pass
+                return lvl
+        except:
+            pass
+
 
 def generate_integer(level):
     ...
