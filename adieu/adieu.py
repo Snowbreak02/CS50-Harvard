@@ -13,8 +13,7 @@ while True:
         print()
         break
 
-print(names)
-
+print("Adieu, adiue, to " + p.join(names))
 
 
 
