@@ -24,8 +24,9 @@ def generate_integer(level):
     else:
         rng_x = random.randint(100,999)
         rng_x = random.randint(100,999)
-        
+
     return rng_x,rng_y
+
 
 
 if __name__ == "__main__":
