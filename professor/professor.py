@@ -10,7 +10,7 @@ def get_level():
     while True:
         try:
             lvl = int(input("Level: "))
-            if lvl = [1,2,3]:
+            if lvl in [1,2,3]:
                 return lvl
         except:
             pass
@@ -28,7 +28,7 @@ def generate_integer(level):
 
     return rng_x,rng_y
 
-def rounds(rng_x,rng_y)L
+def rounds(rng_x,rng_y):
     tries = 1
     while tries < 4:
         try:
