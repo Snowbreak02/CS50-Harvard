@@ -4,7 +4,7 @@ while True:
     try:
         lvl = int(input("Level: "))
         if lvl > 0:
-            print("value is ", )
-
+            #print("value is ", )
+            break
     except:
         pass
