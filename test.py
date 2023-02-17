@@ -1,7 +1,8 @@
 while True:
     try:
         lvl = int(input("Level: "))
-        if lvl == ("1","2","3"):
+        a = [1,2,3]
+        if lvl in a:
             break
     except:
         pass
