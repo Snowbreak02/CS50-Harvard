@@ -12,5 +12,9 @@ if len(sys.argv) == 2:
 else:
     print("Missing command-line argument")
     sys.exit(1)
-
-currency = requests.get
+try:
+    r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    response = r.json
+except requests.RequestException:
+    print("Request error")
+    sys.exit(1)
