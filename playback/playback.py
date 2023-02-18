@@ -1,2 +1,2 @@
 ans = input()
-print(ans, replace(" ","..."))
+print(ans.replace(" ","..."))
