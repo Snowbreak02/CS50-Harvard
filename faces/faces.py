@@ -1,2 +1,3 @@
 ans = input()
-print(ans.replace(":(","🙁"))
+ans_2 = ans.replace(":(","🙁")
+ans_fin = ans_2.replace(":)","🙁")
