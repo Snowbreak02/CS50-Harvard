@@ -13,3 +13,4 @@ else:
     print("Missing command-line argument")
     sys.exit(1)
 
+currency = requests.get
