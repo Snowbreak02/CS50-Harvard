@@ -14,7 +14,10 @@ else:
     sys.exit(1)
 try:
     r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    response = r.json
+    response = r.json()
+    bitcoin = response['bpi']['USD']['rate_float']
+    total_amt = bitcoin * input
+    print(f"${total_amt:,.4f}")
 except requests.RequestException:
     print("Request error")
     sys.exit(1)
