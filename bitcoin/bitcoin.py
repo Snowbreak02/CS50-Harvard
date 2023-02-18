@@ -5,11 +5,11 @@ import json
 
 if len(sys.argv) == 2:
     try:
-        in
-
+        input = float(sys.argv[1])
+    except:
+        print("Command-line argument is not a number")
+        sys.exit(1)
 else:
     print("Missing command-line argument")
-    sys.exit()
+    sys.exit(1)
 
-except requests.RequestException:
-    print("hello.2")
