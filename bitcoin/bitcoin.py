@@ -6,7 +6,7 @@ try:
     if len(sys.argv) == 0:
         print("Missing command-line argument")
         sys.exit()
-    elif sys.argv 
+    elif sys.argv.isdigit()
 
     else:
         sys.exit()
