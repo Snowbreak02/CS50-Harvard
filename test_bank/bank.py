@@ -9,12 +9,12 @@ else:
     print("$100")
 """
 def main():
-    x = str(input("Greeting: "))
-    greeting = x.strip().title()
+    greeting = str(input("Greeting: "))
     final_val = value(greeting)
     print("$",final_val, sep="")
 
 def value(greeting):
+    greeting = greeting.strip().title()
     if "Hello" in greeting:
         return 0
     elif greeting.startswith("H"):
