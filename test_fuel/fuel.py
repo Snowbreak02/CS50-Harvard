@@ -39,10 +39,11 @@ def convert(fuel):
                 p = int(f*100)
                 return p
             else:
-                fraction = input("Fraction: ")
+                fuel = input("Fraction: ")
+                pass
 
         except (ValueError, ZeroDivisionError):
-            pass
+            raise
 
 
 def gauge(perc):
