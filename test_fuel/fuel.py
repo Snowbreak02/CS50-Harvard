@@ -24,7 +24,9 @@ else:
 
 def main():
     fuel = input("Fraction: ")
-
+    frac_conv = convert(fuel)
+    output = gauge(frac_conv)
+    print(output)
 
 def convert(fuel):
       while True:
@@ -34,14 +36,16 @@ def convert(fuel):
             new_deno = int(denominator)
             f = new_num/new_deno
             if f <= 1:
-                return f
+                p = int(f*100)
+                return p
+            else:
+                fraction = input("Fraction: ")
 
         except (ValueError, ZeroDivisionError):
             pass
 
 
 def gauge(perc):
-    perc = f * 100
 
     if perc <= 1:
         return "E"
