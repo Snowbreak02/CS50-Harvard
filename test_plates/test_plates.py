@@ -6,21 +6,21 @@ def main():
     test_punctuations()
 
 def test_length():
-    assert is_valid("Heys12") == "Valid"
-    assert is_valid("Hellothere12") == "Invalid"
-    assert is_valid("H") == "Invalid"
-    assert is_valid("Hi12") == "Invalid"
+    assert is_valid("Heys12") == True
+    assert is_valid("Hellothere12") == False
+    assert is_valid("H") == False
+    assert is_valid("Hi12") == False
 
 def test_number_positions():
-    assert is_valid("12hey12") == "Invalid"
-    assert is_valid("he1y12") == "Invalid"
-    assert is_valid("h1ey12") == "Invalid"
+    assert is_valid("12hey12") == False
+    assert is_valid("he1y12") == False
+    assert is_valid("h1ey12") == False
 
 def test_punctuations():
-    assert is_valid("hey!12") == "Invalid"
-    assert is_valid("hey 12") == "Invalid"
-    assert is_valid("&hey12") == "Invalid"
-    assert is_valid("hey12.") == "Invalid"
+    assert is_valid("hey!12") == False
+    assert is_valid("hey 12") == False
+    assert is_valid("&hey12") == False
+    assert is_valid("hey12.") == False
 
 
 if __name__ == "__main__":
