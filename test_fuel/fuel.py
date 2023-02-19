@@ -23,12 +23,11 @@ else:
 """
 
 def main():
-    fraction = convert(fraction)
+    fuel = input("Fraction: ")
 
 
-def convert(fraction):
+def convert(fuel):
       while True:
-        fuel = input("Fraction: ")
         try:
             numerator, denominator = fuel.split("/")
             new_num = int(numerator)
