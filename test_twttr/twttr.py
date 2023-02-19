@@ -8,7 +8,6 @@ for char in ["A", "E", "I", "O", "U","a", "e", "i", "o", "u"]:
 print(x)
 """
 
-#shortening it
 def main():
     message = input("Input: ")
     msg_wo_vowels = shorten(message)
