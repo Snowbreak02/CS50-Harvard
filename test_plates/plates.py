@@ -18,28 +18,18 @@ def is_valid(s):
     if middle_char(s).isnumeric() == True:
         return False
 
-    length = len(s)
-
-    if not s.isalnum():
-        return False
-    if not s[0:2].isalpha():
-        return False
-    if not 2 <= length <= 6:
-        return False
-
+    for i in range(len(s)):
+        if s[i].isdigit():
+            if not s[i:].isdigit():
+                return False
     i = 0
-
-    while i < length - 1:
-        if not s[i].isalpha():
+    while i < len(s):
+        if s[i].isalpha() == False:
             if s[i] == "0":
                 return False
-            elif not s[i:].isdigit():
-                return False
             else:
-                return True
-        i += 1
-
-    return True
+                break
+        i+=1
 
     for char in s:
         if char in [".", "!", " ", "?"]:
