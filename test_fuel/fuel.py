@@ -25,7 +25,7 @@ else:
 def main():
     while True:
         fuel = input("Fraction: ")
-        fraction = convert(fraction)
+        fraction = convert(fuel)
 
 
 def convert(fraction):
