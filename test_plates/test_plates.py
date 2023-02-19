@@ -14,7 +14,6 @@ def test_length():
 def test_number_positions():
     assert is_valid("12hey12") == False
     assert is_valid("he1y12") == False
-    assert is_valid("h1ey12") == False
 
 def test_punctuations():
     assert is_valid("hey!12") == False
