@@ -5,11 +5,11 @@ def main():
     test_num()
     test_punctuation()
 
-def test_Hposition():
-    assert value("Hey") == 20
-    assert value("cheers") == 100
-    assert value("Hello") == 0
-    assert value("hello") == 0
+def test_length():
+    assert value("Heys12") == "Valid"
+    assert value("hey12") == "Invalid"
+    assert value("Hello12") == "Invalid"
+    assert value("i") == "Invalid"
 
 def test_num():
     assert value("1234") == 100
