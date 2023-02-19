@@ -23,22 +23,22 @@ else:
 """
 
 def main():
-    while True:
-        fuel = input("Fraction: ")
-        f = convert(fuel)
+    fraction = convert(fraction)
 
 
 def convert(fraction):
-     try:
-        numerator, denominator = fuel.split("/")
-        new_num = int(numerator)
-        new_deno = int(denominator)
-        f = new_num/new_deno
-        if f <= 1:
-            return f
+      while True:
+        fuel = input("Fraction: ")
+        try:
+            numerator, denominator = fuel.split("/")
+            new_num = int(numerator)
+            new_deno = int(denominator)
+            f = new_num/new_deno
+            if f <= 1:
+                return f
 
-    except (ValueError, ZeroDivisionError):
-        pass
+        except (ValueError, ZeroDivisionError):
+            pass
 
 
 def gauge(percentage):
