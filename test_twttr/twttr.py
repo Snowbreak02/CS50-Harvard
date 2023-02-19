@@ -15,8 +15,8 @@ def main():
 def shorten(word):
     for char in ["A", "E", "I", "O", "U","a", "e", "i", "o", "u"]:
         if char in word:
-            word = word.replace(char,"")
-            return word
+            x = word.replace(char,"")
+            return x
 
 print(x)
 
