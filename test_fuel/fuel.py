@@ -43,7 +43,7 @@ def convert(fuel):
                 pass
 
         except (ValueError, ZeroDivisionError):
-            raise
+            pass
 
 
 def gauge(perc):
