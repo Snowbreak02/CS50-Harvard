@@ -10,7 +10,7 @@ print(x)
 
 #shortening it
 def main():
-    word = str(input("Greeting: "))
+    input = str(input("Greeting: "))
 
 def shorten(word):
     for char in ["A", "E", "I", "O", "U","a", "e", "i", "o", "u"]:
