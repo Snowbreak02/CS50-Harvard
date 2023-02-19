@@ -36,7 +36,7 @@ def convert(fuel):
             new_deno = int(denominator)
             f = new_num/new_deno
             if f <= 1:
-                p = int(f*100)
+                p = float(f*100)
                 return p
             else:
                 fuel = input("Fraction: ")
