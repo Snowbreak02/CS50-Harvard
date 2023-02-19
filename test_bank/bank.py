@@ -14,7 +14,12 @@ def main():
 
 
 def value(greeting):
-    ...
+    if "Hello" in x:
+    print("$0")
+    elif x.startswith("H"):
+        print("$20")
+    else:
+        print("$100")
 
 
 if __name__ == "__main__":
