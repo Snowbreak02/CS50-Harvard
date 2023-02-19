@@ -10,15 +10,18 @@ print(x)
 
 #shortening it
 def main():
-    input = str(input("Greeting: "))
+    message = input("Input: ")
+    msg_wo_vowels = shorten(message)
+    print("Output: " + msg_wo_vowels)
+
 
 def shorten(word):
-    for char in ["A", "E", "I", "O", "U","a", "e", "i", "o", "u"]:
-        if char in word:
-            x = word.replace(char,"")
-            return x
+    wo_vowels = ""
+    for letter in word:
+        if not letter.lower() in ["a", "e", "i", "o", "u"]:
 
-print(x)
+            wo_vowels += letter
+    return wo_vowels
 
 
 if __name__ == "__main__":
