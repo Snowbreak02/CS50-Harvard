@@ -43,6 +43,7 @@ def convert(fuel):
                 pass
 
         except (ValueError, ZeroDivisionError):
+            fuel = input("Fraction: ")
             pass
 
 
