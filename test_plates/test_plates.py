@@ -9,7 +9,7 @@ def test_length():
     assert is_valid("Heys12") == True
     assert is_valid("Hellothere12") == False
     assert is_valid("H") == False
-    assert is_valid("Hi12") == False
+    assert is_valid("Hi12") == True
 
 def test_number_positions():
     assert is_valid("12hey12") == False
