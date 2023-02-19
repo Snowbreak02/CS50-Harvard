@@ -40,8 +40,15 @@ def convert(fuel):
             pass
 
 
-def gauge(percentage):
-    ...
+def gauge(perc):
+    perc = f * 100
+
+    if perc <= 1:
+        return "E"
+    elif perc >= 99:
+        return "F"
+    else:
+        return (f"{round(perc)}%")
 
 
 if __name__ == "__main__":
