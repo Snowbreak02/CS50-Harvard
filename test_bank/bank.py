@@ -12,7 +12,7 @@ def main():
     x = str(input("Greeting: "))
     greeting = x.strip().title()
     final_val = value(greeting)
-    print("$",final_val)
+    print("$",final_val, sep="")
 
 def value(greeting):
     if "Hello" in greeting:
