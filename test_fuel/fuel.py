@@ -25,7 +25,7 @@ else:
 def main():
     while True:
         fuel = input("Fraction: ")
-        fraction = convert(fuel)
+        f = convert(fuel)
 
 
 def convert(fraction):
@@ -35,7 +35,7 @@ def convert(fraction):
         new_deno = int(denominator)
         f = new_num/new_deno
         if f <= 1:
-            break
+            return f
 
     except (ValueError, ZeroDivisionError):
         pass
