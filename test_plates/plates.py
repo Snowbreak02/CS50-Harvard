@@ -32,7 +32,7 @@ def is_valid(s):
         i+=1
 
     for char in s:
-        if char in [".", "!", " ", "?", ",", "]:
+        if char in [".", "!", " ", "?", ",", ":", "/"]:
             return False
     return True
 
