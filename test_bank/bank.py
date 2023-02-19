@@ -9,7 +9,8 @@ else:
     print("$100")
 """
 def main():
-    ...
+    x = str(input("Greeting: "))
+    x = x.strip().title()
 
 
 def value(greeting):
