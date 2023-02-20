@@ -1,6 +1,6 @@
 import sys
 
-if (sys.argv).endswith(".py") :
+if sys.argv.endswith(".py") :
     try:
         input = float(sys.argv[1])
     except:
