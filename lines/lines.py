@@ -4,7 +4,9 @@ if len(sys.argv) == 2 :
     input = str(sys.argv[1]).lstrip()
     if input.endswith(".py"):
         try:
-            print("Finding")
+            with open(input) as file:
+            for line in file:
+                
         except:
             print("File does not exist")
             sys.exit(1)
