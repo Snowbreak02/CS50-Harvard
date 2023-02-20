@@ -5,8 +5,10 @@ if len(sys.argv) == 2 :
     if input.endswith(".py"):
         try:
             with open(input) as file:
-            for line in file:
-                
+                 for line in file:
+                     if line != startswith("# "):
+
+
         except:
             print("File does not exist")
             sys.exit(1)
