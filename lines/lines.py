@@ -6,7 +6,8 @@ if len(sys.argv) == 2 :
         try:
             with open(input) as file:
                  for line in file:
-                     if not line.startswith("# "):
+                     if not line.startswith("# ") and line.strip():
+                         
 
 
         except:
