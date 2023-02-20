@@ -7,7 +7,8 @@ if len(sys.argv) == 2 :
             with open(input) as file:
                  for line in file:
                      if not line.startswith("# ") and line.strip():
-                         
+                        x = len(input.readlines())
+                        print('Total lines:', x)
 
 
         except:
