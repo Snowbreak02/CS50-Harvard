@@ -4,12 +4,12 @@ if len(sys.argv) == 2 :
     input = str(sys.argv[1]).lstrip()
     if input.endswith(".py"):
         try:
+            count = 0
             with open(input) as file:
                  for line in file:
                      if not line.startswith("# ") and line.strip():
-                        x = len(input.readlines())
-                        print('Total lines:', x)
-
+                        count += 1
+            print(count)
 
         except:
             print("File does not exist")
