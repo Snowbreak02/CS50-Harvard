@@ -10,7 +10,6 @@ if len(sys.argv) == 2 :
                 for line in file:
                     if not line.lstrip().startswith("#") and not line.isspace():
                         counter += 1
-
             print(counter)
 
         except FileNotFoundError:
