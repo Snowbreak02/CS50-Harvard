@@ -2,10 +2,10 @@ import sys
 
 if sys.argv.endswith(".py") :
     try:
-        input = float(sys.argv[1])
+        input = str(sys.argv[1])
     except:
-        print("Command-line argument is not a number")
+        print("File does not")
         sys.exit(1)
 else:
-    print("Missing command-line argument")
+    print("Too few command-line argument")
     sys.exit(1)
