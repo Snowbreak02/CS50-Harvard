@@ -1,7 +1,7 @@
 import sys
 
 if len(sys.argv) == 2 :
-    input = str(sys.argv[1])
+    input = str(sys.argv[1]).lstrip()
     if input.endswith(".py"):
         try:
             print("Finding")
