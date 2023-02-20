@@ -16,5 +16,5 @@ elif len(sys.argv) < 2:
     sys.exit(1)
 
 else:
-    print("Too many command-line argument")
+    print("Too many command-line arguments")
     sys.exit(1)
