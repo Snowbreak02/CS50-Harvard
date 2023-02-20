@@ -11,6 +11,10 @@ if len(sys.argv) == 2 :
     else:
         print("Not a python file")
         sys.exit(1)
-else:
+elif len(sys.argv) < 2:
     print("Too few command-line argument")
+    sys.exit(1)
+
+else:
+    print("Too many command-line argument")
     sys.exit(1)
