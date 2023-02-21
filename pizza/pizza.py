@@ -18,8 +18,8 @@ if len(sys.argv) == 2 :
         except FileNotFoundError:
             print("File does not exist")
             sys.exit(1)
-    else:
-        print("Not a python file")
+    elif ".csv" not in sys.argv[1]:
+        print("Not a CSV file")
         sys.exit(1)
 elif len(sys.argv) < 2:
     print("Too few command-line argument")
