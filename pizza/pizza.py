@@ -1,6 +1,30 @@
 from tabulate import tabulate
+import sys
 
-table = [["spam",42],["eggs",451],["bacon",0]]
-headers = ["item", "qty"]
 
-print(tabulate(table, headers, tablefmt="grid"))
+if len(sys.argv) == 2 :
+    input = str(sys.argv[1]).lstrip()
+    if input.endswith(".py"):
+        counter = 0
+        try:
+            with open(input) as file:
+                for line in file:
+                    table = [["spam",42],["eggs",451],["bacon",0]]
+                    headers = ["item", "qty"]
+
+            print(tabulate(table, headers, tablefmt="grid"))
+
+        except FileNotFoundError:
+            print("File does not exist")
+            sys.exit(1)
+    else:
+        print("Not a python file")
+        sys.exit(1)
+elif len(sys.argv) < 2:
+    print("Too few command-line argument")
+    sys.exit(1)
+
+else:
+    print("Too many command-line arguments")
+    sys.exit(1)
+
