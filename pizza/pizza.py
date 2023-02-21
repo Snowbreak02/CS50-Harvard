@@ -8,8 +8,9 @@ if len(sys.argv) == 2 :
     if input.endswith(".csv"):
         counter = 0
         try:
-            with open(input) as file:
-                for line in file:
+            with open(input, "r") as csvfile:
+                reader = csv.reader(csvfile)
+                for row in reader:
                     table = [["spam",42],["eggs",451],["bacon",0]]
                     headers = ["item", "qty"]
 
