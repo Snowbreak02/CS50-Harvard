@@ -6,12 +6,12 @@ if len(sys.argv) > 3:
     print("Too many command-line arguments")
     sys.exit(1)
 
-elif sys.argv[1].lower().endswith(tuple(sources)) and sys.argv[2].lower().endswith(tuple(sources)) == False:
-    print("File does not exist")
+if len(sys.argv) < 3:
+    print("Too few command-line argument")
     sys.exit(1)
 
-elif len(sys.argv) < 3:
-    print("Too few command-line argument")
+if sys.argv[1].lower().endswith(tuple(sources)) and sys.argv[2].lower().endswith(tuple(sources)) == False:
+    print("File does not exist")
     sys.exit(1)
 
 else:
