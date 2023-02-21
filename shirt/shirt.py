@@ -21,9 +21,9 @@ if len(sys.argv) == 3 :
             print(f"Could not read {sys.argv[1]}")
             sys.exit(1)
 
-    elif ".csv" not in sys.argv[1] or ".csv" not in sys.argv[2]:
-        print("Not a CSV file")
-        sys.exit(1)
+    elif sys.argv[1].lower().endswith(tuple(ext))  and sys.argv[2].lower().endswith(tuple(ext)) == False:
+        sys.exit("File does not exist")
+        
 elif len(sys.argv) < 3:
     print("Too few command-line argument")
     sys.exit(1)
