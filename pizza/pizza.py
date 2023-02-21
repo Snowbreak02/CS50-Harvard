@@ -5,7 +5,7 @@ import csv
 
 if len(sys.argv) == 2 :
     input = str(sys.argv[1]).lstrip()
-    if input.endswith(".py"):
+    if input.endswith(".csv"):
         counter = 0
         try:
             with open(input) as file:
