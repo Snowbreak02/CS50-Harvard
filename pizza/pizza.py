@@ -11,8 +11,7 @@ if len(sys.argv) == 2 :
             with open(input, "r") as csvfile:
                 reader = csv.reader(csvfile)
                 for row in reader:
-                    table = [["spam",42],["eggs",451],["bacon",0]]
-                    headers = ["item", "qty"]
+                    table.append(row)
 
             print(tabulate(table, headers, tablefmt="grid"))
 
