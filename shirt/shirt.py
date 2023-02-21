@@ -2,7 +2,6 @@ import sys
 import os
 from PIL import Image,ImageOps
 
-sources = [".jpg", ".jpeg" , ".png"]
 if len(sys.argv) > 3:
     print("Too many command-line arguments")
     sys.exit(1)
