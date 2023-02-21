@@ -4,13 +4,8 @@ import sys
 if len(sys.argv) == 3 :
     input = str(sys.argv[1]).lstrip()
     if input.endswith(".csv"):
-        output =[]
         try:
-            with open(input, "r") as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    split_name = row ["name"].split(",")
-                    output.append({'first': split_name[1].lstrip(), 'last': split_name[0], 'house': row["house"]})
+
 
 
         except FileNotFoundError:
