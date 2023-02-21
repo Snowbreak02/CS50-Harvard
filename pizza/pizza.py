@@ -1,5 +1,6 @@
 from tabulate import tabulate
 import sys
+import csv
 
 
 if len(sys.argv) == 2 :
