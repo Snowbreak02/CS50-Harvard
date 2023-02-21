@@ -6,14 +6,14 @@ import csv
 if len(sys.argv) == 2 :
     input = str(sys.argv[1]).lstrip()
     if input.endswith(".csv"):
-        counter = 0
+        table =[]
         try:
             with open(input, "r") as csvfile:
                 reader = csv.reader(csvfile)
                 for row in reader:
                     table.append(row)
 
-            print(tabulate(table, headers, tablefmt="grid"))
+            print(tabulate(table[1:], headers= table[0], tablefmt="grid"))
 
         except FileNotFoundError:
             print("File does not exist")
