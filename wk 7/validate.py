@@ -7,7 +7,7 @@ email = input("What's your email? ").strip
 # r allows some charcters to be some characters like \ to not be rec as a special char(if special char in the dict then bobian)
 # [^@]: any character except the @ sign
 # \w is alphanumeric:a-z,A-Z,0-9
-if re.search(r"^\w+@[a-zA-Z0-9].+\.edu$", email):
+if re.search(r"^\w+@[a-zA-Z0-9].+\.(edu|com|gov|sg)$", email):
     print("valid")
 else:
     print("invalid")
