@@ -11,9 +11,5 @@ def count(s):
 
 
 
-
-
-
-
 if __name__ == "__main__":
     main()
