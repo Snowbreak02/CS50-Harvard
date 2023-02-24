@@ -12,7 +12,8 @@ def validate(ip):
         for number in num_lists:
             if int(number) < 0 or int(number) > 255:
                 return False
-        return True
+            else:
+                return True
     else:
         return False
 
