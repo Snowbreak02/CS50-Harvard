@@ -1,1 +1,2 @@
-from 
+from validator_collection import validators
+
