@@ -31,9 +31,9 @@ def formatting(hour, min, am_pm):
             new_hour = int(hour)
     if min == None:
         new_min = ":00"
-        new_time = f"{new_hour}" + new_min
+        new_time = f"{new_hour:02}" + new_min
     else:
-        new_time = f"{new_hour}" + ":" + min
+        new_time = f"{new_hour:02}" + ":" + min
     return new_time
 
 
