@@ -7,10 +7,10 @@ def main():
 
 
 def count(s):
-    ...
+    if re.
 
 
-...
+
 
 
 if __name__ == "__main__":
