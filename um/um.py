@@ -7,7 +7,9 @@ def main():
 
 
 def count(s):
-    if re.
+    x = re.findall(" um", s)
+    
+
 
 
 
