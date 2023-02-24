@@ -11,6 +11,7 @@ def test_upper_lower_case():
 
 def test_word_with_um():
     assert count('yummi') == 0
+    assert count('um') == 1
 
 def test_surrounded_by_space():
     assert count('Hello um world') == 1
