@@ -1,5 +1,4 @@
 import re
-import sys
 
 
 def main():
@@ -7,8 +6,8 @@ def main():
 
 
 def count(s):
-    print('Number of occurrence of p:', s.count(' um'))
-
+    um_list = re.findall(r"\b\w*um\w", s, re.IGNORECASE)
+    return len(um_list)
 
 
 if __name__ == "__main__":
