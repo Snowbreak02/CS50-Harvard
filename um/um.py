@@ -7,8 +7,8 @@ def main():
 
 
 def count(s):
-    x = re.findall(" um", s)
-    
+    print('Number of occurrence of p:', s.count(' um'))
+
 
 
 
