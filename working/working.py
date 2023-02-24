@@ -37,6 +37,5 @@ def formatting(hour, min, am_pm):
     return new_time
 
 
-
 if __name__ == "__main__":
     main()
