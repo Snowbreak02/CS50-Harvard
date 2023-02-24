@@ -13,9 +13,5 @@ def parse(s):
             split_url = url.groups()
             return split_url
 
-
-...
-
-
 if __name__ == "__main__":
     main()
