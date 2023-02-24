@@ -9,6 +9,7 @@ def test_format():
     assert validate(r"1.2.3") == False
     assert validate(r"1.4") == False
     assert validate(r"4") == False
+    assert validate(r"cat") == False
 
 
 def test_range():
