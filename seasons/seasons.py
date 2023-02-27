@@ -5,7 +5,7 @@ from datetime import date
 
 
 def main():
-    p = inflect.engine
+    p = inflect.engine()
     get_bday = input("Date of Birth: ")
     try:
         year, month, day = check_bday(get_bday)
