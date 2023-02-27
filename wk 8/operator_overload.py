@@ -5,7 +5,7 @@ class Vault:
         self.penny = penny
 
     def __str__(self):
-        return f"{self.dollars} dollars, {self.cents} cents, {self.penny} penny
+        return f"{self.dollars} dollars, {self.cents} cents, {self.penny} penny"
 
     def __add__(self, other): #overloading the + sign below, combining both of them tgt
         dollars = self.dollars + other.dollars
