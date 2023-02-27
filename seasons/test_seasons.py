@@ -12,6 +12,5 @@ def test_format():
     assert check_bday("July-3-1998") == None
 
 
-
 if __name__ == "__main__":
     main()
