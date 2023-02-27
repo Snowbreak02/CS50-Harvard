@@ -12,20 +12,20 @@ def main():
     except:
         sys.exit("Invalid Date")
 
+    DOB = date(int(year), int(month), int(day))
+    tdy_date = date.today()
+    d_diff = tdy_date - DOB
+    print(d_diff)
 
-    get_day_diff = days_diff()
-    min_diff = int(days_diffent) * 24 * 60
+"""
+    min_diff = int(d_diff) * 24 * 60
     formatted_diff = p.number_to_words(int(min_diff), andword = "")
     print (f"{formatted_diff}")
-
+"""
 def check_bday(get_bday):
     if re.search(r"[0-9]{4}-[0-9]{2}-[0-9]{2}$", get_bday):
         year, month, day = get_bday.split("-")
         return year, month, day
-
-
-def days_diff(get_bday):
-    ...
 
 
 if __name__ == "__main__":
