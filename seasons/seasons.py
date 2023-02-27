@@ -15,9 +15,8 @@ def main():
     DOB = date(int(year), int(month), int(day))
     tdy_date = date.today()
     d_diff = tdy_date - DOB
-    print(d_diff)
-    d_diff = int(d_diff) * 24 * 60
-    formatted_diff = p.number_to_words(int(d_diff), andword = "")
+    t_diff = d_diff.days * 24 * 60
+    formatted_diff = p.number_to_words((t_diff), andword = "")
     print (f"{formatted_diff}")
 
 def check_bday(get_bday):
