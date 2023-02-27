@@ -16,12 +16,10 @@ def main():
     tdy_date = date.today()
     d_diff = tdy_date - DOB
     print(d_diff)
-
-"""
-    min_diff = int(d_diff) * 24 * 60
-    formatted_diff = p.number_to_words(int(min_diff), andword = "")
+    d_diff = int(d_diff) * 24 * 60
+    formatted_diff = p.number_to_words(int(d_diff), andword = "")
     print (f"{formatted_diff}")
-"""
+
 def check_bday(get_bday):
     if re.search(r"[0-9]{4}-[0-9]{2}-[0-9]{2}$", get_bday):
         year, month, day = get_bday.split("-")
