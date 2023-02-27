@@ -18,3 +18,6 @@ def test_range():
     assert validate(r"1.512.3.4") == False
     assert validate(r"1.2.512.4") == False
     assert validate(r"1.2.3.512") == False
+    
+if __name__ == "__main__":
+    main()

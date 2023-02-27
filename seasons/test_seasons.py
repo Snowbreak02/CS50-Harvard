@@ -2,19 +2,16 @@ from seasons import check_bday
 
 def main():
     test_format()
-    test_range()
+
 
 def test_format():
-    assert validate(r"1.2.3.4") == True
-    assert validate(r"1.2.3") == False
-    assert validate(r"1.4") == False
-    assert validate(r"4") == False
-    assert validate(r"cat") == False
+    assert check_bday("1998-02-11") == ("1998", "02", "11")
+    assert check_bday("1998-02-1") == None
+    assert check_bday("July 3, 1998") == None
+    assert check_bday("1998 july 2") == None
+    assert check_bday("July-3-1998") == None
 
 
-def test_range():
-    assert validate(r"255.255.255.255") == True
-    assert validate(r"512.2.1.2") == False
-    assert validate(r"1.512.3.4") == False
-    assert validate(r"1.2.512.4") == False
-    assert validate(r"1.2.3.512") == False
+
+if __name__ == "__main__":
+    main()
