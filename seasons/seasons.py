@@ -4,7 +4,10 @@ from datetime import date
 
 
 def main():
-    ...
+    get_bday = input("Date of Birth: ")
+    get_day_diff = days_diff()
+    min_diff = int(days_diffent) * 24 * 60
+    print f"{min_diff}"
 
 
 ...
