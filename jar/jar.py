@@ -1,7 +1,11 @@
+def main():
+    cookies = Jar.get()
+    print(cookies)
+
 class Jar:
     def __init__(self, capacity=12):
         self.capactity = capacity
-        
+
 
     def __str__(self):
         ...
@@ -11,6 +15,12 @@ class Jar:
 
     def withdraw(self, n):
         ...
+
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
 
     @property
     def capacity(self):
