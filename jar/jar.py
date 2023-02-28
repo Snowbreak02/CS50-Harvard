@@ -28,8 +28,3 @@ class Jar:
     @property
     def size(self):
         return self._size
-
-jar = Jar()
-jar.deposit(6)
-jar.withdraw(2)
-print(jar.size)
