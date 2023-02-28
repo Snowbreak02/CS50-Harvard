@@ -18,14 +18,14 @@ class Jar:
     def withdraw(self, n):
         if self.size < n:
             raise ValueError("Too few cookies")
-        self.size -= n
-        
+        self._size -= n
+
     @property
     def capacity(self):
-        ...
+        return self._capacity
 
     @property
     def size(self):
-        ...
+        return self._size
 
 jar = Jar()
