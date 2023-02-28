@@ -10,13 +10,13 @@ class Jar:
         return self.size * "🍪"
 
     def deposit(self, n):
-        if n > self.capacity:
+        if n > self._capacity:
             raise ValueError("Exceed capacity")
-        if self.size + n > self.capacity:
+        if self._size + n > self._capacity:
             raise ValueError("Exceed capacity")
 
     def withdraw(self, n):
-        if self.size < n:
+        if self._size < n:
             raise ValueError("Too few cookies")
         self._size -= n
 
@@ -27,3 +27,7 @@ class Jar:
     @property
     def size(self):
         return self._size
+
+jar = Jar()
+jar.deposit(6)
+jar.withdraw(2)
