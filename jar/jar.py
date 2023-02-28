@@ -8,9 +8,12 @@ class Jar:
 
     def __str__(self):
         return self.size * "🍪"
-        
+
     def deposit(self, n):
-        ...
+        if n > self.capacity:
+            raise ValueError("Exceed capacity")
+        if self.size + n > self.capacity:
+            raise ValueError("Exceed capacity")
 
     def withdraw(self, n):
         ...
@@ -22,3 +25,5 @@ class Jar:
     @property
     def size(self):
         ...
+
+jar = Jar()
