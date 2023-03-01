@@ -44,8 +44,8 @@ class game_board(object):
     def __init__(self,master,img):
 
         #Create board of snake and ladder
-        board_width = 850
-        board_height = 600
+        board_width = 1920
+        board_height = 1080
         self.color = ["#FFF", "#F00", "#0F0", "#00F", "#FF0", "#0FF"]
         self.canvas = Canvas(master, width = board_width, height = board_height, bg = "brown")
         self.canvas.grid(padx=0, pady=0)
@@ -207,9 +207,10 @@ class game_board(object):
 def main():
     master = Tk()
     master.title("Snake and Ladder")
-    master.geometry("850x600")
+    master.geometry("1920x1080")
     img = PhotoImage( file = "snake-ladder-board.gif")
     x = game_board(master,img)
     master.mainloop()
 
-main()
+if __name__ == "__main__":
+    main()
