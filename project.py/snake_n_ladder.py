@@ -208,7 +208,7 @@ def main():
     master = Tk()
     master.title("Snake and Ladder")
     master.geometry("850x600")
-    img = PhotoImage( file = "snake-ladder-board.gif")
+    img = PhotoImage( file = "board.png")
     x = game_board(master,img)
     master.mainloop()
 
