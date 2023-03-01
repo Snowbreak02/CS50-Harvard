@@ -4,6 +4,7 @@
 import random
 from tkinter import *
 import time
+import os
 
 #function for generating random number on dice
 def dice_roll():
@@ -202,14 +203,28 @@ class game_board(object):
             button = Button(top, text="Dismiss", command=top.destroy)
             button.pack()
 
+def loadrelimages(relativepath):
+    from PIL import ImageTk, Image
+    import os
+    directory_path = os.path.dirname(__file__)
+    file_path = os.path.join(directory_path, relativepath)
+    img = ImageTk.PhotoImage(Image.open(file_path.replace('\\',"/")))
+    return img
+
+root = Tk()
+
+canvas = Canvas(root, width=1920, height=1080)
+canvas.pack()
+
 
 #defining the main function
 def main():
     master = Tk()
     master.title("Snake and Ladder")
     master.geometry("1920x1080")
-    img = PhotoImage( file = "snake-ladder-board.gif")
-    x = game_board(master,img)
+    loadedimg=loadrelimages('snake-ladder-board.gif')
+    canvas.create_image(250, 250, image=loadedimg)
+    x = game_board(master,loadedimg)
     master.mainloop()
 
 if __name__ == "__main__":
