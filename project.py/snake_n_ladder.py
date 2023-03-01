@@ -154,7 +154,7 @@ def check_win(player_name, position):
         sys.exit(1)
 
 #function define for playing the game
-def start():
+def main():
     first_msg()
     time.sleep(SLEEP_BETWEEN_ACTIONS)
     p1_name, p2_name = get_player_names()
@@ -185,4 +185,4 @@ def start():
 
 
 if __name__ == "__main__":
-    start
+    main()
