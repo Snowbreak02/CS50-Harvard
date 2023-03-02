@@ -105,7 +105,7 @@ def got_snake_bite(old_value, current_value, player_name):
 
 #function define for ladder jump
 def got_ladder_jump(old_value, current_value, player_name):
-    print("\n" + random.choice(text_for_ladder_jump).upper() + " ########")
+    print("\n" + random.choice(text_for_ladder_jump).upper() + "⬆️🔥📈🔥📈⬆️")
     print("\n" + player_name + " is clibing the ladder from " + str(old_value) + " to " + str(current_value))
 
 #function define for snake and ladder
