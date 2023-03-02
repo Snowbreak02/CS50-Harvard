@@ -93,14 +93,14 @@ def get_player_names():
 def get_dice_value():
     time.sleep(SLEEP_BETWEEN_ACTIONS)
     dice_value = random.randint(1, DICE_FACE)
-    print("Dice value: " + int(dice_value))
+    print("Dice value: " + str(dice_value))
     return dice_value
 
 
 #function define for snake bite
 def got_snake_bite(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
-    print("\n"" " + player_name + " got a bite from snake. Going down from " + int(old_value) + " to " + int(current_value))
+    print("\n"" " + player_name + " got a bite from snake. Going down from " + str(old_value) + " to " + str(current_value))
 
 
 #function define for ladder jump
