@@ -99,7 +99,7 @@ def get_dice_value():
 
 #function define for snake bite
 def got_snake_bite(old_value, current_value, player_name):
-    print("\n" + random.choice(text_for_snake_bite).upper() + " ~~~~~~~~>")
+    print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
     print("\n"" " + player_name + " got a bite from snake. Going down from " + int(old_value) + " to " + int(current_value))
 
 
