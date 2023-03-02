@@ -114,7 +114,7 @@ def snake_ladder(player_name, current_value, dice_value):
     old_value = current_value
     current_value = current_value + dice_value
 
-    if current_value > MAX_VAL:
+    if current_value < MAX_VAL:
         print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
         return old_value
 
