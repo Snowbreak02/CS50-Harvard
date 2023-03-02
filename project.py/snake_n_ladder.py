@@ -135,7 +135,7 @@ def snake_ladder(player_name, current_value, dice_value):
 #function define for checking the winner
 def check_win(player_name, position):
     time.sleep(SLEEP_BETWEEN_ACTIONS)
-    if MAX_VAL == position:
+    if MAX_VAL <= position:
         print("\n" + player_name + "has  won the game.")
         print("Congratulations " + player_name +"You are the winner")
         sys.exit(1)
@@ -153,7 +153,7 @@ def main():
     while True:
         time.sleep(SLEEP_BETWEEN_ACTIONS)
         input_1 = input("\n" + p1_name + ": " + random.choice(text_for_plr_turn) + " Press enter for rolling the dice: ")
-        print("\n Dice is being rolled...")
+        print("\nDice is being rolled...")
         dice_value = get_dice_value()
         time.sleep(SLEEP_BETWEEN_ACTIONS)
         print(p1_name + " moving....")
@@ -162,7 +162,7 @@ def main():
         check_win(p1_name, p1_current_position)
 
         input_2 = input("\n" + p2_name + ": " + random.choice(text_for_plr_turn) + " Press enter for rolling the dice: ")
-        print("\n Dice is being rolled...")
+        print("\nDice is being rolled...")
         dice_value = get_dice_value()
         time.sleep(SLEEP_BETWEEN_ACTIONS)
         print(p2_name + " moving....")
