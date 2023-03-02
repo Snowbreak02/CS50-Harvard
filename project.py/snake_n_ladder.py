@@ -46,7 +46,7 @@ snake_position = {
     12: 4,
     18: 6,
     22: 11,
-    36: 7,
+    37: 7,
     42: 8,
     53: 31,
     69: 36,
@@ -60,7 +60,7 @@ ladders_position = {
     25: 51,
     29: 49,
     36: 57,
-    42: 66,
+    43: 66,
 }
 
 #function for printing the rules of the game
@@ -93,14 +93,14 @@ def get_player_names():
 def get_dice_value():
     time.sleep(SLEEP_BETWEEN_ACTIONS)
     dice_value = random.randint(1, DICE_FACE)
-    print("Dice value " + str(dice_value))
+    print("Dice value: " + int(dice_value))
     return dice_value
 
 
 #function define for snake bite
 def got_snake_bite(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_snake_bite).upper() + " ~~~~~~~~>")
-    print("\n"" " + player_name + " got a bite from snake. Going down from " + str(old_value) + " to " + str(current_value))
+    print("\n"" " + player_name + " got a bite from snake. Going down from " + int(old_value) + " to " + int(current_value))
 
 
 #function define for ladder jump
