@@ -166,7 +166,7 @@ def main():
     while True:
         time.sleep(SLEEP_BETWEEN_ACTIONS)
         input_1 = input("\n" + p1_name + ": " + random.choice(text_for_plr_turn) + " Press enter for rolling the dice: ")
-        print("\n d\Dice is being rolled...")
+        print("\n Dice is being rolled...")
         dice_value = get_dice_value()
         time.sleep(SLEEP_BETWEEN_ACTIONS)
         print(p1_name + " moving....")
