@@ -98,7 +98,7 @@ def get_player_names():
     while not p2_name:
         p2_name = input("Name of second player: ").strip()
 
-    print("\n'" + p1_name + "' and '" + p2_name + " You will play against each other'\n")
+    print("\n'" + p1_name + "' and '" + p2_name + "' You will be playing against each other\n")
     return p1_name, p2_name
 
 
