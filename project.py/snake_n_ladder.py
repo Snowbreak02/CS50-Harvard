@@ -50,13 +50,6 @@ snake_position = {
     42: 8,
     53: 31,
     67: 36,
-    73: 28,
-    80: 41,
-    84: 53,
-    90: 48,
-    94: 65,
-    96: 80,
-    99: 2
 }
 
 #Ladder Positions where key is the bottom of ladder and value is the top of ladder
@@ -68,12 +61,6 @@ ladders_position = {
     29: 74,
     36: 57,
     42: 72,
-    49: 86,
-    57: 76,
-    61: 93,
-    77: 86,
-    81: 98,
-    88: 91
 }
 
 #function for printing the rules of the game
@@ -84,7 +71,7 @@ def first_msg():
 
 # Delay of 1 second between each action
 SLEEP_BETWEEN_ACTIONS = 1
-MAX_VAL = 100
+MAX_VAL = 70
 DICE_FACE = 6
 
 
