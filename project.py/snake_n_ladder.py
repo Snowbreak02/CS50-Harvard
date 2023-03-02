@@ -100,13 +100,13 @@ def get_dice_value():
 #function define for snake bite
 def got_snake_bite(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
-    print("\n"" " + player_name + " got a bite from snake. Going down from " + str(old_value) + " to " + str(current_value))
+    print("\n"" " + player_name + " has been bitten by a snake! Going down from " + str(old_value) + " to " + str(current_value))
 
 
 #function define for ladder jump
 def got_ladder_jump(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_ladder_jump).upper() + "⬆️ 🔥📈🔥📈⬆️")
-    print("\n" + player_name + " is clibing the ladder from " + str(old_value) + " to " + str(current_value))
+    print("\n" + player_name + " is climbing the ladder from " + str(old_value) + " to " + str(current_value))
 
 #function define for snake and ladder
 def snake_ladder(player_name, current_value, dice_value):
