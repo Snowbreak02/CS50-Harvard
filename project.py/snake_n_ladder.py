@@ -49,7 +49,7 @@ snake_position = {
     36: 7,
     42: 8,
     53: 31,
-    67: 36,
+    69: 36,
 }
 
 #Ladder Positions where key is the bottom of ladder and value is the top of ladder
@@ -58,9 +58,9 @@ ladders_position = {
     5: 15,
     13: 44,
     25: 51,
-    29: 74,
+    29: 49,
     36: 57,
-    42: 72,
+    42: 66,
 }
 
 #function for printing the rules of the game
