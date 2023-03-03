@@ -15,12 +15,12 @@ def main():
 
     while True:
         time.sleep(actions_delay)
-        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + "Press enter to roll the 🎲dice🎲: ")
+        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_val = get_dice_value()
         time.sleep(actions_delay)
         print(p1_name + "is moving...")
-        p1_current_pos = snake_ladder(p1_name, p1_current_pos, dice_value)
+        p1_current_pos = snake_ladder_actions(p1_name, p1_current_pos, dice_value)
 
         check_win(p1_name, p1_current_pos)
 
@@ -29,14 +29,14 @@ def main():
         dice_val = get_dice_value()
         time.sleep(actions_delay)
         print(p2_name + "is moving...")
-        p2_current_pos = snake_ladder(p2_name, p2_current_pos, dice_value)
+        p2_current_pos = snake_ladder_actions(p2_name, p2_current_pos, dice_value)
 
         check_win(p2_name, p2_current_pos)
 
 
 def welc_msg():
-    print("Hi there, Welcome to my very first game of Snakes and Ladders, created using Python!")
-    print("This is a 2 player game where each player will take turns rolling the dice and advancing till one reaches 70. May the luckiest player win!🏆")
+    print("Hi there! Welcome to my very first game of Snakes and Ladders created using Python!")
+    print("This is a 2 player game where each player will take turns rolling the dice and advancing till one reaches 70.\n🏆May the luckiest player win!🏆")
 
 actions_delay = 1
 MAX_VAL = 70
@@ -104,8 +104,7 @@ txt_for_plyr_turn = [
     "Feeling lucky?",
     "Time waits for no man.",
     "You're doing great.",
-    "Ready to be a champion?",
-    "",
+    "Ready to be a champion?"
 ]
 
 text_for_snake_bite = [
