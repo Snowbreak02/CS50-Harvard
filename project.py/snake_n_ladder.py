@@ -122,7 +122,7 @@ def got_ladder_jump(old_value, current_value, player_name):
 def snake_ladder(player_name, current_value, dice_value):
     time.sleep(SLEEP_BETWEEN_ACTIONS)
     old_value = current_value
-    current_value = current_value + float(dice_value)
+    current_value = current_value + dice_value
 
     if current_value > MAX_VAL:
         print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
