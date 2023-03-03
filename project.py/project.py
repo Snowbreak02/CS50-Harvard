@@ -1,5 +1,7 @@
 def main():
-    ...
+    welc_msg()
+    time.sleep(actions_delay)
+    p1_name, 
 
 
 def function_1():
