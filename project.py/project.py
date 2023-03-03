@@ -16,7 +16,7 @@ def main():
     while True:
         time.sleep(actions_delay)
         input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
-        print("\n\d..🎲🎲..Dice is being rolled..🎲🎲..")
+        print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
         print(p1_name + " is moving...")
@@ -24,7 +24,7 @@ def main():
 
         check_win(p1_name, p1_current_pos)
 
-        input_2 = input("\n" + p2_name + ": " + random.choice(txt_for_plyr_turn) + "Press enter to roll the 🎲dice🎲: ")
+        input_2 = input("\n" + p2_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
@@ -71,11 +71,7 @@ def ladder(old_value, current_value, player_name):
 def snake_ladder_actions(player_name, current_value, dice_value):
     time.sleep(actions_delay)
     old_value = current_value
-    current_value = current_value + float(dice_value)
-
-    if current_value < MAX_VAL:
-        print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
-        return old_value
+    current_value = current_value + dice_value
 
     print(f"\n{player_name} moved from {old_value} to {current_value}")
 
