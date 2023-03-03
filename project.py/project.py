@@ -68,7 +68,7 @@ def ladder(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_ladder_jump).upper() + "⬆️ 🔥📈🔥📈⬆️")
     print("\n" + player_name + " is climbing the ladder from " + str(old_value) + " to " + str(current_value))
 
-def snake_ladder_actions(dice_value, current_value, player_name):
+def snake_ladder_actions(player_name, current_value, dice_value):
     time.sleep(actions_delay)
     old_value = current_value
     current_value = current_value + float(dice_value)
