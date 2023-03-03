@@ -35,16 +35,36 @@ def main():
 
 
 def welc_msg():
-    print("Hi there, Welcome to my very first game of Snakes and Ladders, created using Python!\n
-    "This is a 2 player game where each player will take turns rolling the dice and advancing. May the luckiest player win!")
+    print("Hi there, Welcome to my very first game of Snakes and Ladders, created using Python!")
+    print("This is a 2 player game where each player will take turns rolling the dice and advancing. May the luckiest player win!🏆")
 
+actions_delay = 1
+MAX_VAL = 70
+DICE_FACE = 6
 
-def function_2():
-    ...
+def get_player_names():
+    p1_name = None
+    while not in p1_name:
+        p1_name = input("Name of first player: ").strip()
 
+    p2_name = None
+    while not in p2_name:
+        p2_name = input("Name of second player: ").strip()
 
-def function_n():
-    ...
+    print(f"\n'{p1_name}' and '{p2_name}' will be playing against each other!⚔️")
+    return p1_name, p2_name
+
+def get_dice_value():
+    time.sleep(actions_delay)
+    dice_value = random.randint(1, DICE_FACE)
+    print("Dice value: " + str(dice_value))
+    return dice_value
+
+def bitten(old_value, current_value, player_name):
+    print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
+    print("\n"" " + player_name + " has been bitten by a snake! Going down from " + str(old_value) + " to " + str(current_value))
+
+def ladder()
 
 
 if __name__ == "__main__":
