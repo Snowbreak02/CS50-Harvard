@@ -43,13 +43,10 @@ MAX_VAL = 70
 DICE_FACE = 6
 
 def get_player_names():
-    p1_name = None
-    while not p1_name:
+    while True:
         p1_name = input("\nName of first player: ").strip()
-
-    p2_name = None
-    while not p2_name:
         p2_name = input("\nName of second player: ").strip()
+        
 
     print(f"\n'{p1_name}' and '{p2_name}' will be playing against each other!⚔️")
     return p1_name, p2_name
