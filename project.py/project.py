@@ -57,7 +57,7 @@ def get_player_names():
 def get_dice_value():
     time.sleep(actions_delay)
     dice_value = random.randint(1, DICE_FACE)
-    print("Dice value: " + str(dice_value))
+    print("Dice value: " + int(dice_value))
     return dice_value
 
 def bitten(old_value, current_value, player_name):
@@ -71,7 +71,7 @@ def ladder(old_value, current_value, player_name):
 def snake_ladder_actions(dice_value, current_value, player_name):
     time.sleep(actions_delay)
     old_value = current_value
-    current_value = sum(current_value + dice_value)
+    current_value = current_value + dice_value)
 
     if current_value < MAX_VAL:
         print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
