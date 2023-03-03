@@ -2,6 +2,9 @@ while True:
         p1_name = input("\nName of first player: ").strip()
         if p1_name.isalpha():
             break
+        else:
+            print("Please use only letters, try again")
+            
         p2_name = input("\nName of second player: ").strip()
         if p2_name.isalpha():
             break
