@@ -15,7 +15,7 @@ def main():
 
     while True:
         time.sleep(actions_delay)
-        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
+        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + "Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_val = get_dice_value()
         time.sleep(actions_delay)
