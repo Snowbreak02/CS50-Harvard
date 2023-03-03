@@ -4,7 +4,7 @@ while True:
             break
         else:
             print("Please use only letters, try again")
-            
+while True:
         p2_name = input("\nName of second player: ").strip()
         if p2_name.isalpha():
             break
