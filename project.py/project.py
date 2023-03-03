@@ -15,7 +15,7 @@ def main():
 
     while True:
         time.sleep(actions_delay)
-        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + "Press enter to roll the 🎲dice🎲: ")
+        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_val = get_dice_value()
         time.sleep(actions_delay)
@@ -99,23 +99,22 @@ def check_win(player_name, position):
         sys.exit(1)
 
 text_for_plyr_turn = [
-    "Its your turn. Hit enter to roll the dice.",
+    "Its your turn.",
     "Are you prepared?",
-    "Lets Go.",
-    "Please move along.",
-    "You are doing great.",
-    "Ready to be a champion.",
+    "Feeling lucky?",
+    "Time waits for no man.",
+    "You're doing great.",
+    "Ready to be a champion?",
     "",
 ]
 
 text_for_snake_bite = [
-    "boom!",
-    "bang!",
-    "snake bite",
-    "oops!",
-    "dang",
-    "oh shit",
-    "alas!"
+    "oh no...",
+    "OUCH!",
+    "OOF!",
+    "oops...",
+    "DANG!",
+    "CHOMP!"
 ]
 
 snake_position = {
