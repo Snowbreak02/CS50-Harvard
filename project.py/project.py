@@ -96,7 +96,7 @@ def snake_ladder_actions(player_name, current_value, dice_value):
 def check_win(player_name, position):
     time.sleep(actions_delay)
     if MAX_VAL <= position:
-        print(f"\n🎊🎊{player_name} has won the game!!🎉🎉")
+        print(f"\n🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊🎊 '{player_name}' HAS WON THE GAME!!🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉\n")
         sys.exit(1)
 
 txt_for_plyr_turn = [
