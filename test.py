@@ -1,5 +1,3 @@
-p1_name = input("\nName of first player: ").strip()
-p2_name = input("\nName of second player: ").strip()
 while True:
         p1_name = input("\nName of first player: ").strip()
         p2_name = input("\nName of second player: ").strip()
