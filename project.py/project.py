@@ -35,7 +35,7 @@ def main():
 
 
 def welc_msg():
-    ...
+    msg = 
 
 
 def function_2():
