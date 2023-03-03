@@ -8,8 +8,14 @@ def main():
     p2_current_pos = 0
 
     while True:
-        time.sleep(actions)
-
+        time.sleep(actions_delay)
+        input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn))
+        print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
+        dice_val = get_dice_value()
+        time.sleep(actions_delay)
+        print(p1_name + "is moving...")
+        p1_current_pos = snake_ladder(p1_name, p1_current_pos, dice_value)
+        
 
 
 
