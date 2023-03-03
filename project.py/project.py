@@ -19,7 +19,7 @@ def main():
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p1_name + " is moving...")
+        print(p1_name + " is moving...", )
         p1_current_pos = snake_ladder_actions(p1_name, p1_current_pos, dice_value)
 
         check_win(p1_name, p1_current_pos)
