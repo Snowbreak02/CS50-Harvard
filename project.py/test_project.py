@@ -1,4 +1,5 @@
 from project import get_player_names
+import pytest
 
 def main():
     test_same_name()
