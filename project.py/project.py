@@ -35,7 +35,8 @@ def main():
 
 
 def welc_msg():
-    msg = 
+    print("Hi there, Welcome to my very first game of Snakes and Ladders, created using Python!\n
+    "This is a 2 player game where each player will take turns rolling the dice and advancing. May the luckiest player win!")
 
 
 def function_2():
