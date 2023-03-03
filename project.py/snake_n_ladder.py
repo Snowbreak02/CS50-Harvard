@@ -93,7 +93,7 @@ def get_player_names():
 def get_dice_value():
     time.sleep(SLEEP_BETWEEN_ACTIONS)
     dice_value = random.randint(1, DICE_FACE)
-    print("Dice value: " + str(dice_value))
+    print("Dice value: " + int(dice_value))
     return dice_value
 
 
