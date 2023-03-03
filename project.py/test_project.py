@@ -16,7 +16,7 @@ def main():
 
 
 def test_same_name(a,b,expected):
-    assert demo.add(a,b) == expected
+    assert get_player_names(a,b) == expected
 """
 def test_num():
     assert value("1234") == 100
