@@ -64,7 +64,18 @@ def bitten(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
     print("\n"" " + player_name + " has been bitten by a snake! Going down from " + str(old_value) + " to " + str(current_value))
 
-def ladder()
+def ladder(old_value, current_value, player_name):
+    print("\n" + random.choice(text_for_ladder_jump).upper() + "⬆️ 🔥📈🔥📈⬆️")
+    print("\n" + player_name + " is climbing the ladder from " + str(old_value) + " to " + str(current_value))
+
+def snake_ladder_actions(dice_value, current_value, player_name):
+    time.sleep(actions_delay)
+    old_value = current_value
+    current_value = current_value + dice_value
+
+    if current value < MAX_VAL:
+        print("You need " + str(MAX_VAL)
+
 
 
 if __name__ == "__main__":
