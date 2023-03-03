@@ -98,7 +98,7 @@ def check_win(player_name, position):
         print(f"\n🎊🎊{player_name} has won the game!!🎉🎉")
         sys.exit(1)
 
-text_for_plr_turn = [
+text_for_plyr_turn = [
     "Its your turn. Hit enter to roll the dice.",
     "Are you prepared?",
     "Lets Go.",
