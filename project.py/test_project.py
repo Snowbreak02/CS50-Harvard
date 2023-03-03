@@ -5,11 +5,11 @@ def main():
     test_num()
     test_punctuation()
 
-def test_Hposition():
-    assert value("Hey") == 20
-    assert value("cheers") == 100
-    assert value("Hello") == 0
-    assert value("hello") == 0
+def test_Hposition(monkeypatch):
+    inputs = iter(['Pavol', 'Kutaj'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    result = say_hello()
+    assert result == "Hello Pavol Kutaj"
 
 def test_num():
     assert value("1234") == 100
