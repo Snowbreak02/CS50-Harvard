@@ -9,7 +9,7 @@ def main():
 """
 @pytest.mark.parametrize(
     'a,b,expected', [
-        ("Jeremy", "Justin", "'Jeremy' and 'Justin' will be playing against each other!⚔️")
+        ("Jeremy", "Justin", "'Jeremy' and 'Justin' will be playing against each other!⚔️"),
         ("Jeremy", "Thomas", "'Jeremy' and 'Thomas' will be playing against each other!⚔️")
     ]
 )
