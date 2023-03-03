@@ -1,5 +1,12 @@
+while True:
+    p1_name = input("\nName of first player: ").strip()
+    p2_name = input("\nName of second player: ").strip()
+assert p1_name != p2_name
+    break
+except if userinput.isdigit():
+    print("Names must not contain numbers")
+except AssertionError:
+    print("The two names cant be the same. Re-enter two unique names!")
 
-current_value = '4'
-dice_value = '5'
-print(sum([current_value , dice_value]))
-
+print(f"\n'{p1_name}' and '{p2_name}' will be playing against each other!⚔️")
+break

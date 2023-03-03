@@ -48,10 +48,10 @@ def get_player_names():
         p2_name = input("\nName of second player: ").strip()
     assert p1_name != p2_name
         break
-    except ValueError:
-        print("number must be valid re-enter")
+    except if userinput.isdigit():
+        print("Names must not contain numbers")
     except AssertionError:
-        print("The two numbers cant be the same. re-enter two unique numbers!")
+        print("The two names cant be the same. Re-enter two unique names!")
 
     print(f"\n'{p1_name}' and '{p2_name}' will be playing against each other!⚔️")
     return p1_name, p2_name
