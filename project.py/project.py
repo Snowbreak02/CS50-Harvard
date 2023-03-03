@@ -36,7 +36,7 @@ def main():
 
 def welc_msg():
     print("Hi there, Welcome to my very first game of Snakes and Ladders, created using Python!")
-    print("This is a 2 player game where each player will take turns rolling the dice and advancing. May the luckiest player win!🏆")
+    print("This is a 2 player game where each player will take turns rolling the dice and advancing till one reaches 70. May the luckiest player win!🏆")
 
 actions_delay = 1
 MAX_VAL = 70
@@ -74,7 +74,21 @@ def snake_ladder_actions(dice_value, current_value, player_name):
     current_value = current_value + dice_value
 
     if current value < MAX_VAL:
-        print("You need " + str(MAX_VAL)
+        print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
+        return old_value
+
+    print(f"\n{player_name} moved from {old_value} to {current_value}")
+
+    if current_value in snake_position:
+        final_value = snake_position.get(current_value)
+        bitten(current_value, final_value, player_name)
+
+    elif current_value in ladders_position:
+        final_value = ladders_position.get(current_value)
+        ladder(current_value, final_value, player_name)
+
+
+
 
 
 
