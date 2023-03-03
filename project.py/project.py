@@ -19,7 +19,7 @@ def main():
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p1_name + " is moving...", )
+        print(p1_name + " is moving...", end="" )
         p1_current_pos = snake_ladder_actions(p1_name, p1_current_pos, dice_value)
 
         check_win(p1_name, p1_current_pos)
@@ -73,7 +73,7 @@ def snake_ladder_actions(player_name, current_value, dice_value):
     old_value = current_value
     current_value = current_value + dice_value
 
-    print(f"\n{player_name} moved from {old_value} to {current_value}")
+    print(f"{player_name} moved from {old_value} to {current_value}")
 
     if current_value in snake_position:
         final_value = snake_position.get(current_value)
