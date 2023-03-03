@@ -1,14 +1,16 @@
 while True:
-        p1_name = input("What is your name?")
+        p1_name = input("Name of first player: ")
         if p1_name.isalpha():
             break
         else:
             print("Please use only letters, try again")
 
 while True:
-        p2_name = input("What is your name?")
-        if p2_name.isalpha():
+        p2_name = input("Name of second player: ")
+        if p2_name.isalpha() and p2_name != p1_name:
             break
+        if p2_name == p1_name:
+            print("Please use a different name, try again")
         else:
             print("Please use only letters, try again")
 
