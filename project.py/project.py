@@ -87,6 +87,14 @@ def snake_ladder_actions(dice_value, current_value, player_name):
         final_value = ladders_position.get(current_value)
         ladder(current_value, final_value, player_name)
 
+    else:
+        final_value = current_value
+
+    return final_value
+
+def check_win(player_name, position):
+    
+
 
 
 
