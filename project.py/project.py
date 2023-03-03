@@ -7,7 +7,7 @@ import sys
 def main():
     welc_msg()
     time.sleep(actions_delay)
-    p1_name, p2_name = get_player_nmes()
+    p1_name, p2_name = get_player_names()
     time.sleep(actions_delay)
 
     p1_current_pos = 0
@@ -44,12 +44,12 @@ DICE_FACE = 6
 
 def get_player_names():
     p1_name = None
-    while not in p1_name:
-        p1_name = input("Name of first player: ").strip()
+    while not p1_name:
+        p1_name = input("\nName of first player: ").strip()
 
     p2_name = None
-    while not in p2_name:
-        p2_name = input("Name of second player: ").strip()
+    while not p2_name:
+        p2_name = input("\nName of second player: ").strip()
 
     print(f"\n'{p1_name}' and '{p2_name}' will be playing against each other!⚔️")
     return p1_name, p2_name
@@ -73,7 +73,7 @@ def snake_ladder_actions(dice_value, current_value, player_name):
     old_value = current_value
     current_value = current_value + dice_value
 
-    if current value < MAX_VAL:
+    if current_value < MAX_VAL:
         print("You need " + str(MAX_VAL - old_value) + " to win this game. Keep trying.")
         return old_value
 
@@ -98,7 +98,7 @@ def check_win(player_name, position):
         print(f"\n🎊🎊{player_name} has won the game!!🎉🎉")
         sys.exit(1)
 
-text_for_plyr_turn = [
+txt_for_plyr_turn = [
     "Its your turn.",
     "Are you prepared?",
     "Feeling lucky?",
