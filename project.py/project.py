@@ -17,18 +17,18 @@ def main():
         time.sleep(actions_delay)
         input_1 = input("\n" + p1_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
-        dice_val = get_dice_value()
+        dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p1_name + "is moving...")
+        print(p1_name + " is moving...")
         p1_current_pos = snake_ladder_actions(p1_name, p1_current_pos, dice_value)
 
         check_win(p1_name, p1_current_pos)
 
         input_2 = input("\n" + p2_name + ": " + random.choice(txt_for_plyr_turn) + "Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
-        dice_val = get_dice_value()
+        dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p2_name + "is moving...")
+        print(p2_name + " is moving...")
         p2_current_pos = snake_ladder_actions(p2_name, p2_current_pos, dice_value)
 
         check_win(p2_name, p2_current_pos)
