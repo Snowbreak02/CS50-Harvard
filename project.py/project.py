@@ -112,6 +112,16 @@ text_for_snake_bite = [
     "CHOMP!"
 ]
 
+text_for_ladder_jump = [
+    "Yipee!",
+    "YAHoo!",
+    "hurrayyy!",
+    "oh my Goodness...",
+    "On fire🔥🔥",
+    "You are a champion.",
+    "Winning this already?!"
+]
+
 snake_position = {
     12: 4,
     18: 6,
