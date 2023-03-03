@@ -93,10 +93,50 @@ def snake_ladder_actions(dice_value, current_value, player_name):
     return final_value
 
 def check_win(player_name, position):
-    
+    time.sleep(actions_delay)
+    if MAX_VAL <= position:
+        print(f"\n🎊🎊{player_name} has won the game!!🎉🎉")
+        sys.exit(1)
 
+text_for_plr_turn = [
+    "Its your turn. Hit enter to roll the dice.",
+    "Are you prepared?",
+    "Lets Go.",
+    "Please move along.",
+    "You are doing great.",
+    "Ready to be a champion.",
+    "",
+]
 
+text_for_snake_bite = [
+    "boom!",
+    "bang!",
+    "snake bite",
+    "oops!",
+    "dang",
+    "oh shit",
+    "alas!"
+]
 
+snake_position = {
+    12: 4,
+    18: 6,
+    22: 11,
+    37: 7,
+    42: 8,
+    53: 31,
+    69: 36,
+}
+
+ladders_position = {
+    3: 26,
+    5: 15,
+    13: 44,
+    25: 51,
+    29: 49,
+    36: 57,
+    43: 66,
+}
 
 
 
