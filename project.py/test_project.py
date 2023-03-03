@@ -1,7 +1,7 @@
 from project import get_player_names
 
 def main():
-    test_Hposition()
+    test_same_name()
     test_num()
     test_punctuation()
 
