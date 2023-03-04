@@ -72,13 +72,13 @@ def bitten(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_snake_bite).upper() + "🐍🐍🐍🐍🐍")
     print("\n"" " + player_name + " has been bitten by a snake! Going down from " + str(old_value) + " to " + str(current_value))
     if current_value < MAX_VAL:
-      print("You now need " + str(current_value) + " to win this game. Keep going.")
+      print("You now need " + str(MAX_VAL - current_value) + " to win this game. Keep going.")
 
 def ladder(old_value, current_value, player_name):
     print("\n" + random.choice(text_for_ladder_jump).upper() + "⬆️ 🔥📈🔥📈⬆️")
     print("\n" + player_name + " is climbing the ladder from " + str(old_value) + " to " + str(current_value))
     if current_value < MAX_VAL:
-      print("You now need " + str(current_value) + " to win this game. Keep going.")
+      print("You now need " + str(MAX_VAL - current_value) + " to win this game. Keep going.")
 
 
 def snake_ladder_actions(player_name, current_value, dice_value):
