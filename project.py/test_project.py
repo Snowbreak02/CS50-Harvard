@@ -1,4 +1,4 @@
-from project import get_player_names
+from project import get_player_names import welc_msg() import get_dice_value() import bitten() import ladder() import snake_ladder_actions() import check_win()
 import pytest
 from unittest.mock import patch
 
