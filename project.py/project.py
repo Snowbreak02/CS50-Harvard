@@ -7,6 +7,7 @@ import sys
 def main():
     welc_msg()
     time.sleep(actions_delay)
+    p1_name = input("\nName of first player: ").strip()
     p1_name, p2_name = get_player_names()
     time.sleep(actions_delay)
 
