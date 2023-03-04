@@ -9,7 +9,7 @@ def main():
                     ("12345\nJenny\n", "'12345' and 'Jenny' will be playing against each other!⚔️\n")
                   ]
 
-@pytest.mark.parametrize("user_input, expected_output", "test_parameters")
+@pytest.mark.parametrize("user_input, expected_output", test_parameters)
 def test_get_player_names(user_input, expected_output, capfd):
     # Simulating user input
     with patch('builtins.input', side_effect=user_input.split('\n')):
