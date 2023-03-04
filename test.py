@@ -1,6 +1,8 @@
-p1_name = input("\nName of first player: ").strip()
-p2_name = input("\nName of second player: ").strip()
-p1_named, p2_named = check_player_names()
+
+def main():
+    p1_name = input("\nName of first player: ").strip()
+    p2_name = input("\nName of second player: ").strip()
+    p1_named, p2_named = check_player_names()
 
 def check_player_names(p1_name, p2_name):
     while True:
@@ -21,3 +23,6 @@ def check_player_names(p1_name, p2_name):
 
     print(f"\n'{p1_named}' and '{p2_named}' will be playing against each other!⚔️")
     return p1_named, p2_named
+
+if __name__ == "__main__":
+      main()
