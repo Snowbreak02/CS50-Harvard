@@ -3,9 +3,9 @@ import pytest
 from unittest.mock import patch
 
 test_parameters = [
-                    ("Alan\nJack\n", "'Alan' and 'Jack' will be playing against each other!⚔️\n"),
-                    ("Mary\nMary\n", "'Mary' and 'Mary' will be playing against each other!⚔️\n"),
-                    ("12345\nJenny\n", "'12345' and 'Jenny' will be playing against each other!⚔️\n")
+                    ("Alan\nJack\n", "\n'Alan' and 'Jack' will be playing against each other!⚔️\n"),
+                    ("Mary\nMary\n", "\n'Mary' and 'Mary' will be playing against each other!⚔️\n"),
+                    ("12345\nJenny\n", "\n'12345' and 'Jenny' will be playing against each other!⚔️\n")
                   ]
 
 @pytest.mark.parametrize("user_input, expected_output", test_parameters)
