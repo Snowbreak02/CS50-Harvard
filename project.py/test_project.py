@@ -1,29 +1,24 @@
 from project import get_player_names
 import pytest
+from unittest.mock import patch
 
 def main():
-    test_same_name()
-    """
-    test_num()
-    test_punctuation()
-"""
-@pytest.mark.parametrize(
-    'a,b,expected', [
-        ("Jeremy", "Justin", "'Jeremy' and 'Justin' will be playing against each other!⚔️"),
-        ("Jeremy", "Thomas", "'Jeremy' and 'Thomas' will be playing against each other!⚔️")
-    ]
-)
+    test_parameters = [
+                    ("Alan\nJack\n", "'Alan' and 'Jack' will be playing against each other!⚔️\n"),
+                    ("Mary\nMary\n", "'Mary' and 'Mary' will be playing against each other!⚔️\n"),
+                    ("12345\nJenny\n", "'12345' and 'Jenny' will be playing against each other!⚔️\n")
+                  ]
 
+@pytest.mark.parametrize("user_input, expected_output", "test_parameters")
+def test_get_player_names(user_input, expected_output, capfd):
+    # Simulating user input
+    with patch('builtins.input', side_effect=user_input.split('\n')):
+        # Call the function
+        get_player_names()
 
-def test_same_name(a,b,expected):
-    assert get_player_names(a,b) == expected
-"""
-def test_num():
-    assert value("1234") == 100
-
-def test_punctuation():
-    assert value("%$&*!") == 100
-"""
+    # Capturing user output
+    captured = capfd.readouterr()
+    assert captured.out == expected_output
 
 if __name__ == "__main__":
     main()
