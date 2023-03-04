@@ -7,9 +7,7 @@ import sys
 def main():
     welc_msg()
     time.sleep(actions_delay)
-    p1_name = input("\nName of first player: ").strip()
-    p2_name = input("\nName of second player: ").strip()
-    p1_named, p2_named = check_player_names()
+    p1_name, p2_name = get_player_names()
     time.sleep(actions_delay)
 
     p1_current_pos = 0
@@ -21,19 +19,19 @@ def main():
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p1_named + " is moving...", end="" )
-        p1_current_pos = snake_ladder_actions(p1_named, p1_current_pos, dice_value)
+        print(p1_name + " is moving...", end="" )
+        p1_current_pos = snake_ladder_actions(p1_name, p1_current_pos, dice_value)
 
-        check_win(p1_named, p1_current_pos)
+        check_win(p1_name, p1_current_pos)
 
         input_2 = input("\n" + p2_name + ": " + random.choice(txt_for_plyr_turn) + " Press enter to roll the 🎲dice🎲: ")
         print("\n..🎲🎲..Dice is being rolled..🎲🎲..")
         dice_value = get_dice_value()
         time.sleep(actions_delay)
-        print(p2_named + " is moving...")
-        p2_current_pos = snake_ladder_actions(p2_named, p2_current_pos, dice_value)
+        print(p2_name + " is moving...")
+        p2_current_pos = snake_ladder_actions(p2_name, p2_current_pos, dice_value)
 
-        check_win(p2_named, p2_current_pos)
+        check_win(p2_name, p2_current_pos)
 
 
 def welc_msg():
@@ -44,7 +42,7 @@ actions_delay = 1
 MAX_VAL = 70
 DICE_FACE = 6
 
-def check_player_names(p1_name, p2_name):
+def get_player_names():
     while True:
             p1_name = input("\nName of first player: ")
             if p1_name.isalpha():
