@@ -1,4 +1,4 @@
-# My own Snake and Ladder Game!!
+# My own Snake and Ladder Game using Python!!
 
 import time
 import random
