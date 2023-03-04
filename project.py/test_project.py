@@ -1,5 +1,5 @@
 from project import get_player_names
-from project import welc_msg 
+from project import welc_msg
 from project import get_dice_value
 from project import bitten
 from project import ladder
@@ -7,6 +7,7 @@ from project import snake_ladder_actions
 from project import check_win
 import pytest
 from unittest.mock import patch
+
 def main():
     test_parameters = [
                         ("Alan\nJack\n", "\n'Alan' and 'Jack' will be playing against each other!⚔️\n"),
