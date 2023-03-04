@@ -17,3 +17,6 @@ To start, read the welcome message. Enter both palyer's name and hit enter to st
 To start off, I had to determine the scope, whether I was to allow multiple unlimited players or just two. I was overwhelmed with the coding structure when I tried to take in multiple users, thus sticking to just 2 players in the end.
 
 From the start, I had to define get_player_names() function to be able to ensure that player names do not match or contain any special characters. I personally didn't think it was necessary at first and just used a simple input for both names but I realised how ridiculous it was to have a text saying ~~'Mary' and 'Mary' will be playing against each other!⚔️~~
+
+Next was combining functions within functions, where I had the get_dice_value() function and needing to to be combined with snake_ladder_actions(). It was a hassle as at firstI had inputted the format as snake_ladder_actions( dice_value, current_value, player_name), thus causing my dice_value to end up being my player_name value, resulting in the whole code breaking and me having to debugg it using the Run and Debug function. Thank god for it as I then found my mistake and was able to correct it.
+
