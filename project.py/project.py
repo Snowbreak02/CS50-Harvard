@@ -44,14 +44,14 @@ DICE_FACE = 6
 
 def get_player_names():
     while True:
-            p1_name = input("\nName of first player: ")
+            p1_name = input("\nName of first player: ").title()
             if p1_name.isalpha():
                 break
             else:
                 print("Please use only letters, try again")
 
     while True:
-            p2_name = input("\nName of second player: ")
+            p2_name = input("\nName of second player: ").title()
             if p2_name.isalpha() and p2_name != p1_name:
                 break
             if p2_name == p1_name:
