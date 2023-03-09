@@ -132,8 +132,8 @@ def shortest_path(source, target):
                         child = child.parent
                     movies.reverse()
                     people.reverse()
-                    a = zip(movies,people)
-                    for movie, person in a:
+                    a = zip(movie,people)
+                    for movie, people in a:
                         solution.append((movie,people))
                     return solution
 
