@@ -119,9 +119,24 @@ while True:
     explored.add(node.state)
 
     # Add neighbors to frontier
-    for action, state in neighbors_for_person(node.state):
-        if not frontier.contains_state(state) and state not in self.explored:
-            child = Node(state=state, parent=node, action=action)
+    for movie_id, person_id in neighbors_for_person(node.state):
+        if not frontier.contains_state(person_id) and state not in explored:
+            child = Node(state=person_id, parent=node, action=movie_id)
+
+            # If node is the goal, then we have a solution
+            if child.state == target:
+                movies = []
+                people = []
+                solution = []
+                while child is not None:
+                    movies.append(child.action)
+                    people.append(child.state)
+                    child = child.parent
+                movies.reverse()
+                people.reverse()
+                self.solution = (actions, cells)
+                return
+
             frontier.add(child)
     raise NotImplementedError
 
