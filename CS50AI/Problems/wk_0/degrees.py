@@ -120,7 +120,7 @@ while True:
 
     # Add neighbors to frontier
     for movie_id, person_id in neighbors_for_person(node.state):
-        if not frontier.contains_state(person_id) and state not in explored:
+        if not frontier.contains_state(person_id) and person_id not in explored:
             child = Node(state=person_id, parent=node, action=movie_id)
 
             # If node is the goal, then we have a solution
@@ -135,12 +135,11 @@ while True:
                 movies.reverse()
                 people.reverse()
                 a = zip(movies,people)
-                for movie, person in x:
+                for movie, person in a:
                     solution.append((movie,people))
                 return solution
 
             frontier.add(child)
-    raise NotImplementedError
 
 
 def person_id_for_name(name):
