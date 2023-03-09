@@ -95,12 +95,12 @@ def shortest_path(source, target):
     num_explored = 0
 
     # Initialize frontier to just the starting position
-    start = Node(state=self.start, parent=None, action=None)
-    frontier = StackFrontier()
+    start = Node(state=source, parent=None, action=None)
+    frontier = QueueFrontier()
     frontier.add(start)
 
     # Initialize an empty explored set
-    num.explored = set()
+    explored = set()
 
 # Keep looping until solution found
     while True:
