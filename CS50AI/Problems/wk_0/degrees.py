@@ -94,7 +94,7 @@ def shortest_path(source, target):
 """Finds a solution to maze, if one exists."""
 
 # Keep track of number of states explored
-self.num_explored = 0
+num_explored = 0
 
 # Initialize frontier to just the starting position
 start = Node(state=self.start, parent=None, action=None)
@@ -102,7 +102,7 @@ frontier = StackFrontier()
 frontier.add(start)
 
 # Initialize an empty explored set
-self.explored = set()
+num.explored = set()
 
 # Keep looping until solution found
 while True:
@@ -113,23 +113,10 @@ while True:
 
     # Choose a node from the frontier
     node = frontier.remove()
-    self.num_explored += 1
-
-    # If node is the goal, then we have a solution
-    if node.state == self.goal:
-        actions = []
-        cells = []
-        while node.parent is not None:
-            actions.append(node.action)
-            cells.append(node.state)
-            node = node.parent
-        actions.reverse()
-        cells.reverse()
-        self.solution = (actions, cells)
-    return
+    num_explored += 1
 
     # Mark node as explored
-    self.explored.add(node.state)
+    num_explored.add(node.state)
 
     # Add neighbors to frontier
     for action, state in self.neighbors(node.state):
