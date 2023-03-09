@@ -132,9 +132,9 @@ def shortest_path(source, target):
                         child = child.parent
                     movies.reverse()
                     people.reverse()
-                    a = zip(movie,people)
-                    for movie, people in a:
-                        solution.append((movie,people))
+                    a = zip(movies,people)
+                    for movie, person in a:
+                        solution.append((movie,person))
                     return solution
 
                 frontier.add(child)
