@@ -93,53 +93,53 @@ def shortest_path(source, target):
     """
 """Finds a solution to maze, if one exists."""
 
-# Keep track of number of states explored
-num_explored = 0
+    # Keep track of number of states explored
+    num_explored = 0
 
-# Initialize frontier to just the starting position
-start = Node(state=self.start, parent=None, action=None)
-frontier = StackFrontier()
-frontier.add(start)
+    # Initialize frontier to just the starting position
+    start = Node(state=self.start, parent=None, action=None)
+    frontier = StackFrontier()
+    frontier.add(start)
 
-# Initialize an empty explored set
-num.explored = set()
+    # Initialize an empty explored set
+    num.explored = set()
 
 # Keep looping until solution found
-while True:
+    while True:
 
     # If nothing left in frontier, then no path
-    if frontier.empty():
-        raise Exception("no solution")
+        if frontier.empty():
+            raise Exception("no solution")
 
-    # Choose a node from the frontier
-    node = frontier.remove()
-    num_explored += 1
+        # Choose a node from the frontier
+        node = frontier.remove()
+        num_explored += 1
 
-    # Mark node as explored
-    explored.add(node.state)
+        # Mark node as explored
+        explored.add(node.state)
 
-    # Add neighbors to frontier
-    for movie_id, person_id in neighbors_for_person(node.state):
-        if not frontier.contains_state(person_id) and person_id not in explored:
-            child = Node(state=person_id, parent=node, action=movie_id)
+        # Add neighbors to frontier
+        for movie_id, person_id in neighbors_for_person(node.state):
+            if not frontier.contains_state(person_id) and person_id not in explored:
+                child = Node(state=person_id, parent=node, action=movie_id)
 
-            # If node is the goal, then we have a solution
-            if child.state == target:
-                movies = []
-                people = []
-                solution = []
-                while child is not None:
-                    movies.append(child.action)
-                    people.append(child.state)
-                    child = child.parent
-                movies.reverse()
-                people.reverse()
-                a = zip(movies,people)
-                for movie, person in a:
-                    solution.append((movie,people))
-                return solution
+                # If node is the goal, then we have a solution
+                if child.state == target:
+                    movies = []
+                    people = []
+                    solution = []
+                    while child is not None:
+                        movies.append(child.action)
+                        people.append(child.state)
+                        child = child.parent
+                    movies.reverse()
+                    people.reverse()
+                    a = zip(movies,people)
+                    for movie, person in a:
+                        solution.append((movie,people))
+                    return solution
 
-            frontier.add(child)
+                frontier.add(child)
 
 
 def person_id_for_name(name):
