@@ -116,7 +116,7 @@ while True:
     num_explored += 1
 
     # Mark node as explored
-    num_explored.add(node.state)
+    explored.add(node.state)
 
     # Add neighbors to frontier
     for action, state in self.neighbors(node.state):
