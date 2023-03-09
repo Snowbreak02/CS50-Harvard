@@ -91,8 +91,6 @@ def shortest_path(source, target):
 
     If no possible path, returns None.
     """
-"""Finds a solution to maze, if one exists."""
-
     # Keep track of number of states explored
     num_explored = 0
 
