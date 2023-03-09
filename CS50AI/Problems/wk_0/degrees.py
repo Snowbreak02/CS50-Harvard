@@ -134,8 +134,10 @@ while True:
                     child = child.parent
                 movies.reverse()
                 people.reverse()
-                self.solution = (actions, cells)
-                return
+                a = zip(movies,people)
+                for movie, person in x:
+                    solution.append((movie,people))
+                return solution
 
             frontier.add(child)
     raise NotImplementedError
