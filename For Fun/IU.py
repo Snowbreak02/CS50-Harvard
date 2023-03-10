@@ -6,9 +6,13 @@ url = 'https://www.melon.com/album/detail.htm?albumId=10827816'
 response = requests.get(url)
 
 # create a BeautifulSoup object to parse the HTML
-soup = BeautifulSoup(response.text, 'html.parser')
+with open(url) as html_file:
+    soup = BeautifulSoup(html_file, 'lxml')
 
+print(soup.prettify())
+"""
 # find the album name tag and extract its text
 album_name = soup.find('div', {'class': 'song_name'}).strip()
 
 print(album_name)
+"""
