@@ -9,6 +9,6 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
 # find the album name tag and extract its text
-album_name = soup.find('div', {class_= '곡정보'}).text.strip()
+album_name = soup.find('div', class_= 'service_list_song d_song_list').text.strip()
 
 print(album_name)
