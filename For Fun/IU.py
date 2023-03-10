@@ -12,4 +12,3 @@ soup = BeautifulSoup(response.text, 'html.parser')
 album_name = soup.find('div', {'class': 'song_name'}).strip()
 
 print(album_name)
-"""
