@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup
 url = 'https://www.melon.com/album/detail.htm?albumId=10827816'
 response = requests.get(url)
 
-print(result.status.code)
-
+print(response.status_code)
+"""
 # create a BeautifulSoup object to parse the HTML
 soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -14,3 +14,4 @@ soup = BeautifulSoup(response.text, 'html.parser')
 album_name = soup.find('div', {'class': 'song_name'}).strip()
 
 print(album_name)
+"""
