@@ -11,4 +11,4 @@ soup = BeautifulSoup(response, 'lxml')
 # find the album name tag and extract its text
 album_name = soup.find('div', class_='dem__checkbox_label')
 
-print(album_name.prettify())
+print(soup.prettify())
