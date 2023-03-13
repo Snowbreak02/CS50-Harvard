@@ -7,8 +7,8 @@ response = requests.get(url).text
 
 # create a BeautifulSoup object to parse the HTML
 soup = BeautifulSoup(response, 'lxml')
-"""
+
 # find the album name tag and extract its text
-album_name = soup.find('div', class_= 'service_list_song d_song_list').text.strip()
-"""
-print(soup.prettify())
+album_name = soup.find('strong').strip()
+
+print(album_name.prettify())
