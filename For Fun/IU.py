@@ -9,6 +9,6 @@ response = requests.get(url).text
 soup = BeautifulSoup(response, 'lxml')
 
 # find the album name tag and extract its text
-album_name = soup.find('strong').strip()
+#album_name = soup.find('entry-content herald-entry-content')
 
-print(album_name.prettify())
+print(soup.prettify())
