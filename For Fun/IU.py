@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # send an HTTP request to the album page
-url = 'https://www.melon.com/album/detail.htm?albumId=10827816'
+url = 'https://coreyms.com'
 response = requests.get(url).text
 
 # create a BeautifulSoup object to parse the HTML
