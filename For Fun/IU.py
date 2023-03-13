@@ -6,7 +6,7 @@ url = 'https://karchives.com/iu-discography/'
 response = requests.get(url).text
 
 # create a BeautifulSoup object to parse the HTML
-soup = BeautifulSoup(response, 'lxml')
+soup = BeautifulSoup(response, 'html')
 
 # find the album name tag and extract its text
 album_name = soup.find('div', class_='dem__checkbox_label')
