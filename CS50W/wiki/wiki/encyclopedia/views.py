@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from markdown2 import Markdown
-from django.http import HttpResponse
 import random
 
 from . import util
@@ -31,7 +30,7 @@ def entry(request, title):
             "title": title,
             "content": html_content
         })
-    
+
 def search(request):
     if request.method == "POST":
         entry_search = request.POST['q']
@@ -69,7 +68,7 @@ def new_page(request):
                 "title": title,
                 "content": html_content
             })
-        
+
 def edit(request):
     if request.method == 'POST':
         title = request.POST['entry_title']
@@ -78,7 +77,7 @@ def edit(request):
             "title": title,
             "content": content
         })
-    
+
 def save_edit(request):
     if request.method == 'POST':
         title = request.POST['title']
@@ -89,7 +88,7 @@ def save_edit(request):
             "title": title,
             "content": html_content
         })
-    
+
 def rand(request):
     allentries = util.list_entries()
     random_entry= random.choice(allentries)
