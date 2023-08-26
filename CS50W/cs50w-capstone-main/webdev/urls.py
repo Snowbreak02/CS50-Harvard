@@ -1,0 +1,18 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+    path("create", views.create, name="create"),
+    path("login", views.login_view, name="login"),
+    path("logout", views.logout_view, name="logout"),
+    path("register", views.register, name="register"),
+    path("<str:content_type>", views.content, name="content"),
+    path("resource/<int:resource_id>", views.resource, name="resource"),
+
+    
+    path("getcontent/<str:content_type>", views.get_content, name="get_content"),
+    path("resource/<int:resource_id>/comment", views.comment, name="comment"),
+    path("resource/<int:resource_id>/update", views.update, name="update"),
+]
